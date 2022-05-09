@@ -2,6 +2,7 @@ body {
     background-color: black;
     color: white;
     font-family: Tahoma, sans-serif;
+    min-height: 100%;
 }
 
 a {
@@ -44,4 +45,9 @@ a {
     margin: auto;
     line-height: 25px;
     width: 50%;
+}
+
+.license {
+  margin-top: 2%;
+  font-size: 12px;
 }
