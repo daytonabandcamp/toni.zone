@@ -15,6 +15,8 @@
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     </head>
 <body>
+    <audio id="sfxSwitch" src="sfx/switch.wav" preload="auto"></audio>
+    <audio id="sfxConfirm" src="sfx/confirm.wav" preload="auto"></audio>
     <div class="header">
         <center><img src="logo.gif"></center>
     </div>
@@ -23,11 +25,12 @@
             <img src="ui/zoneball.gif">
         </div>
         <div class="sludgeballs">
-            <img src="ui/idle.gif">
+            <img src="ui/idle.gif" id="switcher">
         </div>
     </div>
     <div class="license">
         <center><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</center>
     </div>
+    <script src="homepage.js"></script>
 </body>
 </html>
