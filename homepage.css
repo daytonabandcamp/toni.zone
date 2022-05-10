@@ -1,0 +1,51 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Tahoma, sans-serif;
+}
+
+a {
+    color:lime;
+}
+
+.header {
+    position: relative;
+    margin-top: 2%;
+    z-index: 1;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.license {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    font-size: 12px;
+}
+
+.menu {
+    position: absolute;
+    width: 900px;
+    -webkit-transform: translateX(-50%) translateY(-30%);
+    transform: translateX(-50%) translateY(-30%);
+    height: 50%;
+    top: 36%;
+    left: 50%;
+}
+
+.zoneball {
+    position: absolute;
+    z-index: -1;
+}
+
+.sludgeballs {
+    position: absolute;
+    top: -8%;
+    left: 40%;
+}
