@@ -49,3 +49,62 @@ a {
     top: -8%;
     left: 40%;
 }
+
+.icons {
+    position: absolute;
+    top: 7%;
+    left: 15%;
+    height: 430px;
+    width: 550px;
+}
+
+#focused-innards {
+    position: absolute;
+    top: 38%;
+    left: 35%;
+    height: 126px;
+    width: 280px;
+}
+#uf1 {
+    position: absolute;
+    top: 0%;
+    left: 0.25%;
+}
+
+#uf2 {
+    position: absolute;
+    top: 20%;
+    left: 12.5%;
+}
+
+#focus {
+    position: absolute;
+    top: 47%;
+    left: 18%;
+}
+
+#uf3 {
+    position: absolute;
+    top: 90%;
+    left: 12.5%;
+}
+
+#uf4 {
+    position: absolute;
+    top: 109%;
+    left: 0.25%;
+}
+
+#link-title{
+    position: absolute;
+    font-size: 44px;
+    font-weight: bold;
+    text-shadow: 4px 4px #00A622;
+    left: 18%;
+    top: 5%
+}
+#link-description{
+    position: absolute;
+    top: 50%;
+    text-shadow: 2px 2px #00A622;
+}
