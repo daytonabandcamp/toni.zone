@@ -1,4 +1,5 @@
 let sludgeballs = document.getElementById("switcher")
+sludgeballs.src="ui/idle.gif";
 let sfx = {
     sludgeSwitch: document.getElementById("sfxSwitch"),
     sludgeConfirm: document.getElementById("sfxConfirm")
@@ -36,6 +37,12 @@ let icons = document.getElementById("icons");
 
 document.addEventListener('keydown', handler);
 
+document.addEventListener( 'visibilitychange' , function() {
+    if (!document.hidden) {
+        location.reload();
+    }
+}, false );
+
 function handler(e) {
     if (switchable) {
         if (e.keyCode == 38) {
@@ -56,7 +63,13 @@ function changeSludgeballs(src){
     sfx.sludgeSwitch.play();
     innards.style.opacity = 0;
     icons.style.opacity = 0;
-    console.log("switchable is false!")
+    innards.classList.remove("idle-innards");
+    uf1.classList.remove("idle-uf1");
+    uf2.classList.remove("idle-uf2");
+    focus.classList.remove("idle-focus");
+    uf3.classList.remove("idle-uf3");
+    uf4.classList.remove("idle-uf4");
+    console.log("switchable is false!");
     setTimeout(function() {
         sludgeballs.src="ui/idle.gif";
         switchable = true;
@@ -78,6 +91,12 @@ function resetLinkStuff(){
     focus.src=`icon/${zonelinks[(focused)%7].icon}.png`;
     uf3.src=`icon/${zonelinks[(focused+1)%7].icon}.png`;
     uf4.src=`icon/${zonelinks[(focused+2)%7].icon}.png`;
+    innards.classList.add("idle-innards")
+    uf1.classList.add("idle-uf1")
+    uf2.classList.add("idle-uf2")
+    focus.classList.add("idle-focus");
+    uf3.classList.add("idle-uf3")
+    uf4.classList.add("idle-uf4")
     title.innerHTML=zonelinks[focused].title;
     desc.innerHTML=zonelinks[focused].description;
 }

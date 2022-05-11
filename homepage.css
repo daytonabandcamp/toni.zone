@@ -1,3 +1,5 @@
+
+
 body {
     background-color: black;
     color: white;
@@ -5,7 +7,7 @@ body {
 }
 
 a {
-    color:lime;
+    color: lime;
 }
 
 .header {
@@ -15,9 +17,9 @@ a {
 }
 
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 .license {
@@ -58,13 +60,15 @@ a {
     width: 550px;
 }
 
+/* 36.5% 39% 41.5%*/
 #focused-innards {
     position: absolute;
-    top: 38%;
+    top: 39%;
     left: 35%;
     height: 126px;
     width: 280px;
 }
+
 #uf1 {
     position: absolute;
     top: 0%;
@@ -79,14 +83,14 @@ a {
 
 #focus {
     position: absolute;
-    top: 47%;
+    top: 48%;
     left: 18%;
 }
 
 #uf3 {
     position: absolute;
     top: 90%;
-    left: 12.5%;
+    left: 12%;
 }
 
 #uf4 {
@@ -95,7 +99,7 @@ a {
     left: 0.25%;
 }
 
-#link-title{
+#link-title {
     position: absolute;
     font-size: 44px;
     font-weight: bold;
@@ -103,8 +107,114 @@ a {
     left: 18%;
     top: 5%
 }
-#link-description{
+
+#link-description {
     position: absolute;
     top: 50%;
     text-shadow: 2px 2px #00A622;
 }
+
+.idle-innards {
+    animation: idleinnards 1920ms cubic-bezier(.46,.03,.52,.96) infinite;
+}
+
+.idle-focus {
+    animation: idlefocus 1920ms cubic-bezier(.46,.03,.52,.96) infinite;
+}
+
+.idle-uf1 { animation: idleuf1 1920ms  infinite; }
+
+.idle-uf2 { animation: idleuf2 1920ms  infinite; }
+
+.idle-uf3 { animation: idleuf3 1920ms  infinite; }
+
+.idle-uf4 { animation: idleuf4 1920ms  infinite; }
+
+@keyframes idleuf1 {
+    31.25% {
+        top: 0%;
+        left: 0.25%;
+    }
+    46% {
+        top: -1%;
+        left: 1%;
+    }
+    63% {
+        top: 0%;
+        left: 0.25%;
+    }
+}
+
+@keyframes idleuf2 {
+    41.66% {
+        top: 20%;
+        left: 12.5%;
+    }
+    56.25% {
+        top: 19.5%;
+        left: 13.5%;
+    }
+    73% {
+        top: 20%;
+        left: 12.5%;
+    }
+}
+
+@keyframes idleuf3 {
+    52% {
+        top: 90%;
+        left: 12%;
+    }
+    66.66% {
+        top: 90.75%;
+        left: 13%;
+    }
+    83% {
+        top: 90%;
+        left: 12%;
+    }
+}
+
+@keyframes idleuf4 {
+    62.5% {
+        top: 109%;
+        left: 0.25%;
+    }
+    77% {
+        top: 110%;
+        left: 1%;
+    }
+    93% {
+        top: 109%;
+        left: 0.25%;
+    }
+}
+
+@keyframes idleinnards {
+    0% {
+        top: 36.5%;
+    }
+
+    50% {
+        top: 41.5%;
+    }
+
+    100% {
+        top: 36.5%;
+    }
+}
+
+@keyframes idlefocus {
+    0% {
+        top: 45.5%;
+    }
+
+    50% {
+        top: 52.5%;
+    }
+
+    100% {
+        top: 45.5%;
+    }
+}
+
