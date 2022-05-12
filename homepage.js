@@ -16,13 +16,13 @@ class Zonelink {
     }
 }
 let zonelinks = [
-    new Zonelink("music","music","updates on daytona's upcoming albums and EPs, release announcements, and urlfest performances!","/blogs/music/"),
+    new Zonelink("music","music","updates on daytona's upcoming albums and EPs, release announcements, and urlfest performances!","https://www.toni.zone/blogs/music/"),
     new Zonelink("bandcamp","bandcamp","stream or download daytona's free underground hyperpop and electronica music on her bandcamp page!","https://daytona.bandcamp.com"),
-    new Zonelink("art","art","visit toni's art gallery to see drawings and animations of hers that are either recent or from the archives!","/blogs/art/"),
-    new Zonelink("text","text","check out toni's random little thoughts, tiny opinions, miniscule jokes and would-be tweets!","/blogs/text/"),
-    new Zonelink("writingprojects","writing","read through toni's longer thoughts, including reviews, essays, ranked lists and more!","/blogs/writing/"),
-    new Zonelink("aboutme","about me","wondering about the webmaster herself? check out this collection of fun facts and other information about her!","file:///G:/G-Site/repo/toni.zone/aboutme.html"),
-    new Zonelink("contact","contact","wanna talk to toni about a bug with the website, content suggestions, or a burning question? check here!","file:///G:/G-Site/repo/toni.zone/contact.html")
+    new Zonelink("art","art","visit toni's art gallery to see drawings and animations of hers that are either recent or from the archives!","https://www.toni.zone/blogs/art/"),
+    new Zonelink("text","text","check out toni's random little thoughts, tiny opinions, miniscule jokes and would-be tweets!","https://www.toni.zone/blogs/text/"),
+    new Zonelink("writingprojects","writing","read through toni's longer thoughts, including reviews, essays, ranked lists and more!","https://www.toni.zone/blogs/writing/"),
+    new Zonelink("aboutme","about me","wondering about the webmaster herself? check out this collection of fun facts and other information about her!","https://www.toni.zone/aboutme.html"),
+    new Zonelink("contact","contact","wanna talk to toni about a bug with the website, content suggestions, or a burning question? check here!","https://www.toni.zone/contact.html")
 ];
 let uf1 = document.getElementById("uf1");
 let uf2 = document.getElementById("uf2");
@@ -100,4 +100,29 @@ function resetLinkStuff(){
     uf4.classList.add("idle-uf4")
     title.innerHTML=zonelinks[focused].title;
     desc.innerHTML=zonelinks[focused].description;
+}
+
+let _time = document.getElementById("time");
+let _meridiem = document.getElementById("meridiem");
+let _date = document.getElementById("date");
+let _timezone = document.getElementById("timezone");
+
+function startTime() {
+    const today = new Date();
+    let y = today.getFullYear();
+    let n = today.getMonth();
+    let d = today.getDate();
+    let h = today.getHours()>12?today.getHours()%12:today.getHours();
+    let m = today.getMinutes();
+    let s = today.getSeconds();
+    _time.innerHTML = `${h}:${checkTime(m)}:${checkTime(s)}`;
+    _meridiem.innerHTML = `${today.getHours()>11?"PM":"AM"}`;
+    _date.innerHTML = `${checkTime(n+1)}-${checkTime(d)}-${y}`;
+    _timezone.innerHTML = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    setTimeout(startTime,1000);
+}
+
+function checkTime(i) {
+    if (i<10) {i = "0" + i}; // add zero in front of numbers < 10
+    return i;
 }

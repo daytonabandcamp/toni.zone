@@ -12,9 +12,10 @@
         <title>Homepage - toni.zone</title>
         <link rel="stylesheet" href="homepage.css">
         <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+        <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/segment7" type="text/css"/> 
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     </head>
-<body>
+<body onload="startTime()">
     <audio id="sfxSwitch" src="sfx/switch.wav" preload="auto"></audio>
     <audio id="sfxConfirm" src="sfx/confirm.wav" preload="auto"></audio>
     <div class="header">
@@ -23,6 +24,11 @@
     <div class="menu">
         <div class="zoneball">
             <img src="ui/zoneball.gif">
+            <div class="clock">
+                <span id="time">1:08:47</span><span class="dseg14" id="meridiem">PM</span><br>
+                <span id="date">05-12-2022</span><p style="margin-top: -8px;"></p>
+                <span class="dseg14" id="timezone">America/Phoenix</span>
+            </div>
         </div>
         <div class="sludgeballs">
             <img src="ui/idle.gif" id="switcher">

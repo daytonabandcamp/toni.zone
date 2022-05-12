@@ -113,6 +113,33 @@ a {
     text-shadow: 2px 2px #00A622;
 }
 
+@font-face {
+    font-family: "DSEG7";
+    src: url('fonts/DSEG7Modern-BoldItalic.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: "DSEG14";
+    src: url('fonts/DSEG14Modern-BoldItalic.woff2') format('woff2');
+}
+
+.clock {
+    position: absolute;
+    font-family: "DSEG7";
+    font-size: 48px;
+    line-height:52px;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5), 0 0 8px white;
+    z-index: 2 !important;
+    top: 33%;
+    left: 12%;
+}
+
+.dseg14 {
+    font-family: "DSEG14" !important;
+    font-size: 24px !important;
+}
+
 .idle-innards {
     animation: idleinnards 1920ms cubic-bezier(.46,.03,.52,.96) infinite;
 }
@@ -216,4 +243,3 @@ a {
         top: 45.5%;
     }
 }
-
