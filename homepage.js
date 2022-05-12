@@ -16,13 +16,13 @@ class Zonelink {
     }
 }
 let zonelinks = [
-    new Zonelink("music","music","updates on daytona's upcoming albums and EPs, release announcements, and urlfest performances!","/music.html"),
+    new Zonelink("music","music","updates on daytona's upcoming albums and EPs, release announcements, and urlfest performances!","/blogs/music/"),
     new Zonelink("bandcamp","bandcamp","stream or download daytona's free underground hyperpop and electronica music on her bandcamp page!","https://daytona.bandcamp.com"),
-    new Zonelink("art","art","visit toni's art gallery to see drawings and animations of hers that are either recent or from the archives!","/art.html"),
-    new Zonelink("text","text","check out toni's random little thoughts, tiny opinions, miniscule jokes and would-be tweets!","/text.html"),
-    new Zonelink("writingprojects","writing","read through toni's longer thoughts, including reviews, essays, ranked lists and more!","/writing-projects.html"),
-    new Zonelink("aboutme","about me","wondering about the webmaster herself? check out this collection of fun facts and other information about her!","/about-me.html"),
-    new Zonelink("contact","contact","wanna talk to toni about a bug with the website, content suggestions, or a burning question? check here!","/contact.html")
+    new Zonelink("art","art","visit toni's art gallery to see drawings and animations of hers that are either recent or from the archives!","/blogs/art/"),
+    new Zonelink("text","text","check out toni's random little thoughts, tiny opinions, miniscule jokes and would-be tweets!","/blogs/text/"),
+    new Zonelink("writingprojects","writing","read through toni's longer thoughts, including reviews, essays, ranked lists and more!","/blogs/writing/"),
+    new Zonelink("aboutme","about me","wondering about the webmaster herself? check out this collection of fun facts and other information about her!","file:///G:/G-Site/repo/toni.zone/aboutme.html"),
+    new Zonelink("contact","contact","wanna talk to toni about a bug with the website, content suggestions, or a burning question? check here!","file:///G:/G-Site/repo/toni.zone/contact.html")
 ];
 let uf1 = document.getElementById("uf1");
 let uf2 = document.getElementById("uf2");
@@ -53,6 +53,7 @@ function handler(e) {
             focused=focused>=6?0:focused+1;
         } else if (e.keyCode == 13) {
             sfx.sludgeConfirm.play();
+            setTimeout(function() { window.location.replace(zonelinks[focused].url) },376);
         };
     };
 }
