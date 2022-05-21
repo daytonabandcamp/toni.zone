@@ -106,6 +106,16 @@ let _time = document.getElementById("time");
 let _meridiem = document.getElementById("meridiem");
 let _date = document.getElementById("date");
 let _timezone = document.getElementById("timezone");
+_timezone.innerHTML = Intl.DateTimeFormat().resolvedOptions().timeZone
+    .replace("Europe/","")
+    .replace("Asia/","")
+    .replace("Antarctica/","")
+    .replace("Pacific/","")
+    .replace("America/","")
+    .replace("Indian/","")
+    .replace("Africa/","")
+    .replace("Australia/","")
+    .replace("Atlantic/","");
 
 function startTime() {
     const today = new Date();
@@ -113,12 +123,14 @@ function startTime() {
     let n = today.getMonth();
     let d = today.getDate();
     let h = today.getHours()>12?today.getHours()%12:today.getHours();
+    if (today.getHours() == 0 ){
+        h = 12;
+    }
     let m = today.getMinutes();
     let s = today.getSeconds();
     _time.innerHTML = `${h}:${checkTime(m)}:${checkTime(s)}`;
     _meridiem.innerHTML = `${today.getHours()>11?"PM":"AM"}`;
     _date.innerHTML = `${checkTime(n+1)}-${checkTime(d)}-${y}`;
-    _timezone.innerHTML = Intl.DateTimeFormat().resolvedOptions().timeZone;
     setTimeout(startTime,1000);
 }
 
