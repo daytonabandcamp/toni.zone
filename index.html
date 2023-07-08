@@ -1,53 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Under Construction - toni.zone" />
-    <meta property="og:description" content="Toni (a.k.a Daytona)'s little place in cyberspace for her creative output, random thoughts, updates and more!"/>
-    <meta property="og:url" content="toni.zone" />
-    <meta property="og:image" content="/TZ_ogThumb.png" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage - toni.zone</title>
-    <link rel="stylesheet" href="indexstyle.css">
-    <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Homepage - toni.zone" />
+        <meta property="og:description" content="Toni (a.k.a Daytona)'s little place in cyberspace for her creative output, random thoughts, updates and more!"/>
+        <meta property="og:url" content="toni.zone" />
+        <meta property="og:image" content="/TZ_ogThumb.png" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Homepage - toni.zone</title>
+        <link rel="stylesheet" href="homepage.css">
+        <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+        <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/segment7" type="text/css"/> 
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    </head>
+<body onload="startTime()">
+    <audio id="sfxSwitch" src="sfx/switch.wav" preload="auto"></audio>
+    <audio id="sfxConfirm" src="sfx/confirm.wav" preload="auto"></audio>
     <div class="header">
-        <center><img src="logo.gif"></center>
+        <center><a href="/homepage.html"><img src="logo.gif"></a></center>
+        <p><center>Tab through the categories with the ↑ up and ↓ down arrow keys, and hit ↵ enter to select one!</center></p>
     </div>
-    <br>
-    <div class="message">
-        <p><center>Welcome to toni.zone! I'm Toni, and I'm currently reserving the webspace for my future website, which should hopefully be complete (at least to the point where I can use it) by the end of May 2022! The site will contain multiple blogs featuring my art, updates about my music, writing projects, and random thoughts I have! I've been wanting to make a website I can use to quickly and easily store my creative output for a long time, but it's just never worked out. Neocities is just for a different breed of creators, and god bless them, my workflow just hasn't been able to meld with the system they use. So, I'm taking advantage of this beautiful little domain name to build my own! Unchaining myself from any sort of web-building site is allowing me to experiment with web development further, which in turn gives me the ability to make adding content to the site as fast and efficient as humanly possible! Not focusing on that in the past has resulted in me completely abandoning ship on any creative space I try to foster for myself. Let's hope this time is different! I'm excited for y'all to see what I have in store. For now, check out <a href="https://daytona.bandcamp.com">my bandcamp!</a> </center></p>
-    </div>
-    <br>
-    <div class="waviy">
-        <center>
-        <span style="--i:1">u</span>
-        <span style="--i:2">n</span>
-        <span style="--i:3">d</span>
-        <span style="--i:4">e</span>
-        <span style="--i:5">r</span>
-        <span style="--i:6"> </span>
-        <span style="--i:7">c</span>
-        <span style="--i:8">o</span>
-        <span style="--i:9">n</span>
-        <span style="--i:10">s</span>
-        <span style="--i:11">t</span>
-        <span style="--i:12">r</span>
-        <span style="--i:13">u</span>
-        <span style="--i:14">c</span>
-        <span style="--i:15">t</span>
-        <span style="--i:16">i</span>
-        <span style="--i:17">o</span>
-        <span style="--i:18">n</span>
-        <span style="--i:19">!</span>
-        </center>
+    <div class="menu">
+        <div class="zoneball">
+            <img src="ui/zoneball.gif">
+            <div class="clock">
+                <span id="time">1:08:47</span><span class="dseg14" id="meridiem">PM</span><br>
+                <span id="date">05-12-2022</span><p style="margin-top: -8px;"></p>
+                <span class="dseg14" id="timezone">London</span>
+            </div>
+        </div>
+        <div class="sludgeballs">
+            <img src="ui/idle.gif" id="switcher">
+            <div class="icons" id="icons">
+                <img src="icon/aboutme.png" id="uf1" class="idle-uf1">
+                <img src="icon/contact.png" id="uf2" class="idle-uf2">
+                <img src="icon/music.png" id="focus" class="idle-focus">
+                <img src="icon/bandcamp.png" id="uf3" class="idle-uf3">
+                <img src="icon/art.png" id="uf4" class="idle-uf4">
+            </div>
+            <div id="focused-innards" class="idle-innards">
+                <span id="link-title">music</span>
+                <br>
+                <span id="link-description">updates on daytona's upcoming albums and EPs, release announcements, and urlfest performances!</span>
+            </div>
+        </div>
     </div>
     <div class="license">
         <center><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</center>
     </div>
+    <script src="homepage.js"></script>
 </body>
 </html>

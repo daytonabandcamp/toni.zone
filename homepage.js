@@ -1,4 +1,13 @@
-let sludgeballs = document.getElementById("switcher")
+console.log("Woah, hey! Didn't expect you to show up to my humble suspiciously-javascript-console-shaped abode. Well, now that you're here, try not to touch anything. At least try not to touch anything important.");
+console.log("-Toni");
+
+//mobile detection preface
+if (/Android|iPhone/i.test(navigator.userAgent)) {
+    window.location.href = "/blogs/";
+    console.log("MOBILE DETECTED!");
+}
+
+let sludgeballs = document.getElementById("switcher");
 sludgeballs.src="ui/idle.gif";
 let sfx = {
     sludgeSwitch: document.getElementById("sfxSwitch"),
@@ -16,13 +25,13 @@ class Zonelink {
     }
 }
 let zonelinks = [
-    new Zonelink("music","music","updates on daytona's upcoming albums and EPs, release announcements, and urlfest performances!","https://www.toni.zone/blogs/music/"),
-    new Zonelink("bandcamp","bandcamp","stream or download daytona's free underground hyperpop and electronica music on her bandcamp page!","https://daytona.bandcamp.com"),
-    new Zonelink("art","art","visit toni's art gallery to see drawings and animations of hers that are either recent or from the archives!","https://www.toni.zone/blogs/art/"),
-    new Zonelink("text","text","check out toni's random little thoughts, tiny opinions, miniscule jokes and would-be tweets!","https://www.toni.zone/blogs/text/"),
-    new Zonelink("writingprojects","writing","read through toni's longer thoughts, including reviews, essays, ranked lists and more!","https://www.toni.zone/blogs/writing/"),
-    new Zonelink("aboutme","about me","wondering about the webmaster herself? check out this collection of fun facts and other information about her!","https://www.toni.zone/aboutme.html"),
-    new Zonelink("contact","contact","wanna talk to toni about a bug with the website, content suggestions, or a burning question? check here!","https://www.toni.zone/contact.html")
+    new Zonelink("music","music","updates on daytona's upcoming albums and EPs, release announcements, and urlfest performances!","/blogs/music/"),
+    new Zonelink("bandcamp","bandcamp","stream or download daytona's free underground electronica music on her bandcamp page!","https://daytona.bandcamp.com"),
+    new Zonelink("art","art","visit toni's art gallery to see drawings and animations of hers that are either recent or from the archives!","/blogs/art/"),
+    new Zonelink("text","text","check out toni's random little thoughts, tiny opinions, miniscule jokes and would-be tweets!","/blogs/text/"),
+    new Zonelink("writingprojects","writing","read through toni's longer thoughts, including reviews, essays, ranked lists and more!","/blogs/writing/"),
+    new Zonelink("aboutme","about me","wondering about the webmaster herself? check out this collection of fun facts and other information about her!","/blogs/aboutme/"),
+    new Zonelink("contact","contact","wanna talk to toni about a bug with the website, content suggestions, or a burning question? check here!","/blogs/contact/")
 ];
 let uf1 = document.getElementById("uf1");
 let uf2 = document.getElementById("uf2");
@@ -53,7 +62,7 @@ function handler(e) {
             focused=focused>=6?0:focused+1;
         } else if (e.keyCode == 13) {
             sfx.sludgeConfirm.play();
-            setTimeout(function() { window.location.replace(zonelinks[focused].url) },376);
+            setTimeout(function() { window.location.href = zonelinks[focused].url },376);
         };
     };
 }
@@ -70,11 +79,9 @@ function changeSludgeballs(src){
     focus.classList.remove("idle-focus");
     uf3.classList.remove("idle-uf3");
     uf4.classList.remove("idle-uf4");
-    console.log("switchable is false!");
     setTimeout(function() {
         sludgeballs.src="ui/idle.gif";
         switchable = true;
-        console.log("switchable is true!");
         innards.style.opacity = 1;
         icons.style.opacity = 1;
         resetLinkStuff();

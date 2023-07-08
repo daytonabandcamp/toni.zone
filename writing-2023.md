@@ -1,0 +1,21 @@
+---
+layout: toni-page
+title: "2023 Writing"
+permalink: /writing/2023/
+---
+{%- if site.posts.size > 0 -%}
+<p style="height: 2px;"></p>
+    {%- for post in site.categories.writing -%}
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        {%- capture year -%}{{post.date | date: "%Y"}}{%- endcapture -%}
+        {%- if year == "2023" -%}
+            <b><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></b><br>
+            (posted to <b>{{post.categories}}</b> on {{ post.date | date: date_format }})
+            <br><br>
+            {%- if site.show_excerpts -%}
+                {{ post.excerpt }}
+            {%- endif -%}
+        {%- endif -%}
+    {%- endfor -%}
+{%- endif -%}
+<a href="/blogs/writing/archive/">writing archive</a>
