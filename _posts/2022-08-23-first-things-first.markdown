@@ -5,7 +5,7 @@ date: 2022-08-23 21:07:00 -0700
 permalink: /writing/2022/first-things-first
 categories: writing
 ---
-![First Things First](/blogs/img/headers/ftf.png/)
+![First Things First](/img/headers/ftf.png/)
 
 # Prologue
 
