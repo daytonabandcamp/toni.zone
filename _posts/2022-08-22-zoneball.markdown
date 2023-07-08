@@ -1,0 +1,10 @@
+---
+layout: toni-post
+title: "Zoneball"
+date: 2022-08-22 21:18:00 -0700
+permalink: /art/2022/zoneball
+categories: art
+---
+A ~~couple days~~ few months ago, I spent about 3 hours making this little globe lookin' ball so it can spin around this website's homepage! Maybe you folks on mobile aren't able to see it in its full glory, so here it is:
+<br>
+![zoneball](/blogs/img/art/zoneball.gif/)
