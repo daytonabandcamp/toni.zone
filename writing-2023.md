@@ -1,7 +1,7 @@
 ---
 layout: toni-page
 title: "2023 Writing"
-permalink: /writing/2023/
+permalink: /blogs/writing/2023/
 ---
 {%- if site.posts.size > 0 -%}
 <p style="height: 2px;"></p>

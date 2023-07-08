@@ -1,7 +1,7 @@
 ---
 layout: toni-page
 title: Contact
-permalink: /contact/
+permalink: /blogs/contact/
 ---
 ![Contact](/img/headers/contact.png)
 

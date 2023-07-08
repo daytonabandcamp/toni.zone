@@ -1,7 +1,7 @@
 ---
 layout: toni-page
 title: "Privacy Policy"
-permalink: /privacy/
+permalink: /blogs/privacy/
 ---
 ![Privacy Policy](/img/headers/privacy.png)
 

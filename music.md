@@ -1,7 +1,7 @@
 ---
 layout: toni-page
 title: "Music"
-permalink: /music/
+permalink: /blogs/music/
 ---
 {%- if site.posts.size > 0 -%}
 <p style="height: 2px;"></p>

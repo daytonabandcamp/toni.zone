@@ -2,7 +2,7 @@
 layout: toni-post
 title: "The Time Has Come"
 date: 2023-07-08 01:00:00 -0700
-permalink: /text/2023/the-time-has-come
+permalink: /blogs/text/2023/the-time-has-come
 categories: text
 ---
 Well, I guess I'm basically **done!** I know I said that before, but that was back when my web design knowledge was really in its infancy, and I didn't know all that I would actually have to tend to in pursuit of a website built from scratch without a tool like Neocities that **I myself** am paying to host. Privacy policies are so annoying. I wish I could've given y'all more launch content, but I'd rather not wait another billion years before I finally send this thing online.

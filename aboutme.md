@@ -1,7 +1,7 @@
 ---
 layout: toni-page
 title: About Me
-permalink: /aboutme/
+permalink: /blogs/aboutme/
 ---
 ![About Me](/img/headers/aboutme.png)
 # I'm TONI!
