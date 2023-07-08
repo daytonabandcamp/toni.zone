@@ -3,7 +3,7 @@ layout: toni-page
 title: "Privacy Policy"
 permalink: /privacy/
 ---
-![Privacy Policy](/img/headers/privacy.png/)
+![Privacy Policy](/img/headers/privacy.png)
 
 This website **itself,** toni.zone, (hereinafter referred to as "the website") does **not collect any personal data,** as is defined in [this list of examples](https://commission.europa.eu/law/law-topic/data-protection/reform/what-personal-data_en) by the European Commission. As a blog for creative output, no input of personally identifying information whatsoever is required to access **any** content on the website.
 

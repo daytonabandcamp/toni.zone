@@ -3,7 +3,7 @@ layout: toni-page
 title: About Me
 permalink: /aboutme/
 ---
-![About Me](/img/headers/aboutme.png/)
+![About Me](/img/headers/aboutme.png)
 # I'm TONI!
 
 Would you look at that? It's me! The one on ~~the logo~~ that little picture up there! Man, I wish I were still on the logo... but that's just the way the cookie crumbles. At least you can see me in the little bumper stickers I'm making for (some of) the content on this website! Oh, and I also wrote, designed and configured this entire website all by myself! Anyway, enough bragging--I'M **TONI** (she/her,) but you can call me Daytona or Day if you'd so please!! Really, though, Daytona is kind of my *stage* name more than anything. As for my age, I'm **21** years old as of the last time this page was updated! Maybe I'm actually 22 or older, though, and I've just forgotten to update the site for a long time. Probably not! All you really need to know about me, though, is that I'm a polyamorous transfemme enby leftist with a frankly ridiculous amount of free time, and as such, I fear no god. ♥
