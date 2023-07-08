@@ -22,8 +22,8 @@ title: toni.zone
 email: daytonabandcamp@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   do spiders have knees
-baseurl: "https://toni.zone/blogs" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/blogs" # the subpath of your site, e.g. /blog
+url: "https://toni.zone" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: daytonaBandcamp
 github_username:  daytonabandcamp
 
