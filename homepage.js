@@ -7,7 +7,7 @@ let sfx = {
     sludgeSwitch: document.getElementById("sfxSwitch"),
     sludgeConfirm: document.getElementById("sfxConfirm")
 };
-let switchAnimInterval = 270;
+let switchAnimInterval = 376;
 let switchable = true;
 let focused = 0;
 class Zonelink {
@@ -73,7 +73,7 @@ function handler(e) {
             switchDown(false);
         } else if (e.keyCode == 13) {
             sfx.sludgeConfirm.play();
-            setTimeout(function() { window.location.href = zonelinks[focused].url },376);
+            setTimeout(function() { window.location.href = zonelinks[focused].url },switchAnimInterval);
         };
     };
 }
