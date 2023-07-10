@@ -366,7 +366,7 @@ a { color:lime; font-weight: bold; }
     .clock {
         top: 39%;
         left: -150%;
-        font-size: 44px;
+        font-size: 32px;
     }
     .sludgeballs {
         opacity: 0;
