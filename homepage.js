@@ -7,7 +7,7 @@ let sfx = {
     sludgeSwitch: document.getElementById("sfxSwitch"),
     sludgeConfirm: document.getElementById("sfxConfirm")
 };
-let switchAnimInterval = 376;
+let switchAnimInterval = 600;
 let switchable = true;
 let focused = 0;
 class Zonelink {
