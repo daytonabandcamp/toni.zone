@@ -29,7 +29,7 @@ a { color:lime; font-weight: bold; }
 }
 
 .license {
-    position: fixed; bottom: 0; width: 100%; height: 5%; padding: 1%; left: 50%;
+    position: fixed; bottom: 0; width: 100%; height: 9%; padding: 1%; left: 50%;
     -webkit-transform: translateX(-50%); transform: translateX(-50%);
     text-align: center; font-size: 12px; background-color: black;
     line-height: 25px; z-index: 5;
@@ -226,60 +226,29 @@ a { color:lime; font-weight: bold; }
 .idle-uf4 { animation: idleuf4 1920ms  infinite; }
 
 .mobile-categories {
-    position: absolute;
+    display: none;
+    position: relative;
     opacity: 0; z-index: 100;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-    width: 256px;
-    height: 144px;
-    top: 78%;
-    left: 50%;
-}
-
-.mobile-icon {
-    position: absolute;
-    left: 14%;
-    top: 32%;
-    animation: mobileicon 1630ms infinite;
-}
-
-.slightly-elevated {
-    display: flex;
-    position: absolute;
-    top: -2%;
-    left: 35%;
-    text-shadow: 4px 4px #00A622;
-    align-items: center;
+    -transform: translateY(300%);
+    -webkit-transform: translateY(300%);
+    -ms-transform: translateY(300%);
+    width: 100%;
+        top: 50%;
+    height: 48px;
     justify-content: center;
-    text-align: center;
-    width: 144px;
-    height: 144px;
-    animation: mobilecategory 1630ms infinite;
-    line-height: 30px;
+
 }
 
-@keyframes mobileicon {
-    0% {
-        top: 30%;
-    }
-    50% {
-        top: 38%;
-    }
-    100% {
-        top: 30%;
-    }
+#mobile-icon {
+    filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.5));
 }
 
-@keyframes mobilecategory {
-    0% {
-        top: -7%;
-    }
-    50% {
-        top: 1%;
-    }
-    100% {
-        top: -7%;
-    }
+#mobile-category {
+    display: flex;
+    align-items: center;
+    bottom: 10%;
+    height: 36px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 @keyframes idleuf1 {
@@ -395,7 +364,7 @@ a { color:lime; font-weight: bold; }
         margin-top: 8.5%;
     }
     .clock {
-        top: 33%;
+        top: 39%;
         left: -150%;
         font-size: 44px;
     }
@@ -403,6 +372,7 @@ a { color:lime; font-weight: bold; }
         opacity: 0;
     }
     .mobile-categories {
+        display: flex;
         opacity: 1;
     }
     ul {

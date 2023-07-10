@@ -2,9 +2,7 @@ console.log("Woah, hey! Didn't expect you to show up to my humble suspiciously-j
 console.log("-Toni");
 
 let sludgeballs = document.getElementById("switcher");
-let mobileBox = document.getElementById("mobile-box");
 sludgeballs.src="ui/idle.gif";
-mobileBox.src="ui/category.gif";
 let sfx = {
     sludgeSwitch: document.getElementById("sfxSwitch"),
     sludgeConfirm: document.getElementById("sfxConfirm")
@@ -37,11 +35,6 @@ let mobileDown = document.getElementById("mobile-down");
 let mobileIcon = document.getElementById("mobile-icon");
 let mobileCategory = document.getElementById("mobile-category");
 let mobileInnards = document.querySelector(".mobile-innards")
-let mobileDetected = window.matchMedia("(max-width: 600px)").matches;
-console.log(mobileDetected);
-if (mobileDetected) {
-    zonelinks[1].title = "band camp";
-}
 let uf3 = document.getElementById("uf3");
 let uf4 = document.getElementById("uf4");
 let title = document.getElementById("link-title");
