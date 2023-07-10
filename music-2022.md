@@ -1,7 +1,7 @@
 ---
 layout: toni-page
 title: "2022 Music"
-permalink: /music/2022/
+permalink: /blogs/music/2022/
 ---
 {%- if site.posts.size > 0 -%}
 <p style="height: 2px;"></p>

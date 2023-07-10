@@ -1,9 +1,9 @@
 ---
 layout: toni-page
 title: Contact
-permalink: /contact/
+permalink: /blogs/contact/
 ---
-![Contact](/blogs/img/headers/contact.png/)
+![Contact](/img/headers/contact.png)
 
 Hey there! Do you have a problem with the dang darn website? Is there something you think could look better? Do you wanna send me fan stuff, ask me a question about anything or just have someone to talk to? Well, I'm not immediately gonna give you my Discord, that's for darn sure. That's for my friends!
 
