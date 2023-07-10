@@ -1,7 +1,7 @@
 ---
 layout: toni-page
 title: "2023 Music"
-permalink: /music/2023/
+permalink: /blogs/music/2023/
 ---
 {%- if site.posts.size > 0 -%}
 <p style="height: 2px;"></p>

@@ -390,6 +390,7 @@ a { color:lime; font-weight: bold; }
         top: 39%;
         left: -150%;
         font-size: 32px;
+        line-height: 44px;
     }
     .sludgeballs {
         opacity: 0;

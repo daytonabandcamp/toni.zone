@@ -2,7 +2,7 @@
 layout: toni-post
 title: "Dental Hygiene EP (Announcement)"
 date: 2023-07-08 02:00:00 -0700
-permalink: /music/2023/dental-hygiene-announcement
+permalink: /blogs/music/2023/dental-hygiene-announcement
 categories: music
 ---
 With the deployment of the new website basically underway, I suppose it's time for me to finally make a post to the **music** category. I realize I haven't been putting out much public music at all in the last **eight months** or so, but rest assured, I'm not just a dirty slacker. If you're really close to me, you'll know that I've been working on a lot of new music in private recently, but I think it's finally time for me to come out of the woodwork and announce some **new Daytona content** coming soon to a [Bandcamp](https://daytona.bandcamp.com) near you!

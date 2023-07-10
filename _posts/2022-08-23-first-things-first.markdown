@@ -2,10 +2,10 @@
 layout: toni-post
 title: "First Things First"
 date: 2022-08-23 21:07:00 -0700
-permalink: /writing/2022/first-things-first
+permalink: /blogs/writing/2022/first-things-first
 categories: writing
 ---
-![First Things First](/blogs/img/headers/ftf.png/)
+![First Things First](/img/headers/ftf.png)
 
 # Prologue
 
@@ -17,7 +17,7 @@ It's taken well over two years, but I finally have a website that I'm comfortabl
 
 One of the last instances of babysitting I'm doing for this little site before then is pushing a post to each of the four blog categories. I already did one for art, music and text, and the only category left is writing. Writing is special, though; I made the writing blog specifically for posts longer than two paragraphs. That being the case, I decided the first post in the writing blog should be something *considerably* special. This is going to be a retrospective of when, why, and how I made this website, the struggles I went through, the failed attempts of yesteryear, and my hopes for the future.
 
-For anyone reading this on the day the website drops, please, **for the love of god,** do not expect perfection on the first day. While I've built a few websites in the past, there are quite a few firsts that come with this. This is the first time I've ever bought a domain, made proper CSS animations, used Jekyll... hell, this is really the first time I'm extensively using GitHub for a project. It's probably the most unsafe and unstable project of any kind I've *ever* made. Suffice to say... please forgive me if there are any immediate mishaps! That being said, though, I'd really like you to <a href="https://toni.zone/contact.html">talk to me</a> about any bugs or sub-optimal things you find on this website at any point. Now, this was originally gonna be a lot longer so let's get right down to it before I get bored again and neglect this essay for another two months.
+For anyone reading this on the day the website drops, please, **for the love of god,** do not expect perfection on the first day. While I've built a few websites in the past, there are quite a few firsts that come with this. This is the first time I've ever bought a domain, made proper CSS animations, used Jekyll... hell, this is really the first time I'm extensively using GitHub for a project. It's probably the most unsafe and unstable project of any kind I've *ever* made. Suffice to say... please forgive me if there are any immediate mishaps! That being said, though, I'd really like you to <a href="https://toni.zone/contact/">talk to me</a> about any bugs or sub-optimal things you find on this website at any point. Now, this was originally gonna be a lot longer so let's get right down to it before I get bored again and neglect this essay for another two months.
 
 # When Did You Make This Website?
 
@@ -93,4 +93,4 @@ You know what I needed for that, though? The super duper perfect technology. I d
 
 Remember how I said a bunch of pages and paragraphs ago that I wanted to focus on pushing content to the site as easily as possible? Well, meet **Jekyll!** Jekyll was made to integrate perfectly with GitHub Pages and act as a *static site generator!* You just... *give it* markdown files and it *turns them into* HTMLs. It's so insanely easy to use, and they thought about everything from the get-go, and this site wouldn't have been possible without it. A GitHub Pages site without Jekyll is like... a pug without a nose. Not much is different cause, I mean, ya can't really see a pug's nose cuz its whole face is that charcoal color and the nose kinda blends in, but it's *just not the same.* Again, they don't sponsor me or anything, but in this case I really wish they did... it's just so spectacular.
 
-Anyway, I'm done gushing. I was originally gonna talk about a bunch more stuff in this section, and in this essay as a whole, but... come on. I already have five thousand words written down, and I still gotta write <a href="/blogs/aboutme">the other</a> <a href="/blogs/contact">dumb pages</a> I have to finish up before I can get this site live. My brain is totally fried, I hope you understand, and I hope this friggin thing is long enough for ya. Wish me luck! ♥
+Anyway, I'm done gushing. I was originally gonna talk about a bunch more stuff in this section, and in this essay as a whole, but... come on. I already have five thousand words written down, and I still gotta write <a href="/aboutme">the other</a> <a href="/contact">dumb pages</a> I have to finish up before I can get this site live. My brain is totally fried, I hope you understand, and I hope this friggin thing is long enough for ya. Wish me luck! ♥
