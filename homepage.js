@@ -1,14 +1,10 @@
 console.log("Woah, hey! Didn't expect you to show up to my humble suspiciously-javascript-console-shaped abode. Well, now that you're here, try not to touch anything. At least try not to touch anything important.");
 console.log("-Toni");
 
-//mobile detection preface
-if (/Android|iPhone/i.test(navigator.userAgent)) {
-    window.location.href = "/blogs/";
-    console.log("MOBILE DETECTED!");
-}
-
 let sludgeballs = document.getElementById("switcher");
+let mobileBox = document.getElementById("mobile-box");
 sludgeballs.src="ui/idle.gif";
+mobileBox.src="ui/category.gif";
 let sfx = {
     sludgeSwitch: document.getElementById("sfxSwitch"),
     sludgeConfirm: document.getElementById("sfxConfirm")
@@ -36,6 +32,16 @@ let zonelinks = [
 let uf1 = document.getElementById("uf1");
 let uf2 = document.getElementById("uf2");
 let focus = document.getElementById("focus");
+let mobileUp = document.getElementById("mobile-up");
+let mobileDown = document.getElementById("mobile-down");
+let mobileIcon = document.getElementById("mobile-icon");
+let mobileCategory = document.getElementById("mobile-category");
+let mobileInnards = document.querySelector(".mobile-innards")
+let mobileDetected = window.matchMedia("(max-width: 600px)").matches;
+console.log(mobileDetected);
+if (mobileDetected) {
+    zonelinks[1].title = "band camp";
+}
 let uf3 = document.getElementById("uf3");
 let uf4 = document.getElementById("uf4");
 let title = document.getElementById("link-title");
@@ -55,11 +61,9 @@ document.addEventListener( 'visibilitychange' , function() {
 function handler(e) {
     if (switchable) {
         if (e.keyCode == 38) {
-            changeSludgeballs("ui/switch-up.gif");
-            focused=focused<=0?6:focused-1;
+            switchUp(false);
         } else if (e.keyCode == 40) {
-            changeSludgeballs("ui/switch-down.gif");
-            focused=focused>=6?0:focused+1;
+            switchDown(false);
         } else if (e.keyCode == 13) {
             sfx.sludgeConfirm.play();
             setTimeout(function() { window.location.href = zonelinks[focused].url },376);
@@ -67,12 +71,41 @@ function handler(e) {
     };
 }
 
+function switchUp(mobile) {
+    changeSludgeballs("ui/switch-up.gif");
+    focused=focused<=0?6:focused-1;
+    mobileUpAnim();
+}
+
+function switchDown(mobile) {
+    changeSludgeballs("ui/switch-down.gif");
+    focused=focused>=6?0:focused+1;
+    mobileDownAnim();
+}
+
+function mobileUpAnim() {
+    mobileUp.src = "ui/up/click.gif"+"?a="+Math.random();
+    setTimeout(function() {
+        mobileUp.src = "ui/up/idle.gif"+"?a="+Math.random();
+    },300);
+}
+
+function mobileDownAnim() {
+    mobileDown.src = "ui/down/click.gif";
+    setTimeout(function() {
+        mobileDown.src = "ui/down/idle.gif"+"?a="+Math.random();
+    },300);
+}
+
 function changeSludgeballs(src){
+    console.log("cool");
     sludgeballs.src=src;
     switchable = false;
     sfx.sludgeSwitch.play();
     innards.style.opacity = 0;
     icons.style.opacity = 0;
+    mobileIcon.style.opacity = 0;
+    mobileCategory.style.opacity = 0;
     innards.classList.remove("idle-innards");
     uf1.classList.remove("idle-uf1");
     uf2.classList.remove("idle-uf2");
@@ -84,6 +117,8 @@ function changeSludgeballs(src){
         switchable = true;
         innards.style.opacity = 1;
         icons.style.opacity = 1;
+        mobileIcon.style.opacity = 1;
+        mobileCategory.style.opacity = 1;
         resetLinkStuff();
     },switchAnimInterval);
 }
@@ -97,6 +132,7 @@ function resetLinkStuff(){
         uf2.src=`icon/${zonelinks[(focused-1)%7].icon}.png`;
     }
     focus.src=`icon/${zonelinks[(focused)%7].icon}.png`;
+    mobileIcon.src=`icon/${zonelinks[(focused)%7].icon}.png`;
     uf3.src=`icon/${zonelinks[(focused+1)%7].icon}.png`;
     uf4.src=`icon/${zonelinks[(focused+2)%7].icon}.png`;
     innards.classList.add("idle-innards")
@@ -107,6 +143,7 @@ function resetLinkStuff(){
     uf4.classList.add("idle-uf4")
     title.innerHTML=zonelinks[focused].title;
     desc.innerHTML=zonelinks[focused].description;
+    mobileCategory.innerHTML=`<a style="color: white" href="${zonelinks[focused].url}">${zonelinks[focused].title}</a>`;
 }
 
 let _time = document.getElementById("time");
