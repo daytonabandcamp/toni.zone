@@ -105,8 +105,7 @@ a { color:lime; font-weight: bold; }
 
 .mobile-controls {
     position: absolute;
-    left: 25%;
-    top: 16%;
+    transform: translateX(350%) translateY(110%);
 }
 
 .mobile-up {
@@ -240,6 +239,28 @@ a { color:lime; font-weight: bold; }
 
 }
 
+.orientation-warning {
+    position:fixed;
+    padding:0;
+    margin:0;
+    top:0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    display: none;
+    line-height: 60px;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    z-index: 1000;
+}
+
+.orientation-sub {
+    width: 150vh;
+    text-align: center;
+}
+
 #mobile-icon {
     filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.5));
 }
@@ -363,6 +384,7 @@ a { color:lime; font-weight: bold; }
     }
     .mobile-controls {
         margin-top: 8.5%;
+        transform: translateX(350%) translateY(-5%);
     }
     .clock {
         top: 39%;
