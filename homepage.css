@@ -64,6 +64,7 @@ a { color:lime; font-weight: bold; }
     display: none;
     line-height: 25px;
     text-align: center;
+    z-index: 1000;
 }
 .cookies-sub {
     position: absolute;
