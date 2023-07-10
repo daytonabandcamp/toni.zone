@@ -148,7 +148,7 @@ function resetLinkStuff(){
     focus.classList.add("idle-focus");
     uf3.classList.add("idle-uf3")
     uf4.classList.add("idle-uf4")
-    title.innerHTML=zonelinks[focused].title;
+    title.innerHTML=`<a style="color: white" href="${zonelinks[focused].url}">${zonelinks[focused].title}</a>`;
     desc.innerHTML=zonelinks[focused].description;
     mobileCategory.innerHTML=`<a style="color: white" href="${zonelinks[focused].url}">${zonelinks[focused].title}</a>`;
 }
