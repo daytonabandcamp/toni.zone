@@ -10,9 +10,7 @@ body {
     font-family: Tahoma, sans-serif;
 }
 
-a {
-    color: lime;
-}
+a { color:lime; font-weight: bold; }
 
 .header {
     position: relative;

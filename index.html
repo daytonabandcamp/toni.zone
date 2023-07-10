@@ -48,7 +48,12 @@
         </div>
     </div>
     <div class="license">
-        <center><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</center>
+        <center><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. | <a rel="privacy-policy" href="/blogs/privacy">Privacy Policy</a> |<button onclick="hideLicense()" ontouchstart="hideLicense()">Hide</button></center>
+        <script>
+            function hideLicense() {
+                document.getElementById("license").style.display = "none";
+            }
+        </script>
     </div>
     <script src="homepage.js"></script>
 </body>
