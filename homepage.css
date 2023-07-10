@@ -8,6 +8,10 @@ body {
     background-repeat: repeat-x;
     color: white;
     font-family: Tahoma, sans-serif;
+    width: 75%;
+    margin: auto;
+    padding-bottom: 6%;
+    min-height: 100%;
 }
 
 a { color:lime; font-weight: bold; }
@@ -25,9 +29,56 @@ a { color:lime; font-weight: bold; }
 }
 
 .license {
-    position: fixed; bottom: 0; width: 100%; height: 6%; left: 50%;
+    position: fixed; bottom: 0; width: 100%; height: 5%; padding: 1%; left: 50%;
     -webkit-transform: translateX(-50%); transform: translateX(-50%);
     text-align: center; font-size: 12px; background-color: black;
+    line-height: 25px; z-index: 5;
+    box-sizing: content-box;
+}
+
+.license button{
+    background: unset !important;
+    border: unset !important;
+    outline: unset !important;
+    color: lime;
+    font-weight: bold;
+    font-family: Tahoma, sans-serif;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#bullshit {
+    position: relative;
+    right: 0.1%;
+}
+
+.cookies {
+    position:fixed;
+    padding:0;
+    margin:0;
+    top:0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    background:rgba(0,0,0,0.5);
+    display: none;
+    line-height: 25px;
+    text-align: center;
+}
+.cookies-sub {
+    position: absolute;
+    width: 25%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    padding: 20px;
+    border: 2px solid white;
+    background-color: black;
+}
+#cookies-btn {
+    border-radius: 5px;
+    padding: 8px 12px 8px 12px;
+    cursor: pointer;
 }
 
 .menu {
@@ -49,6 +100,23 @@ a { color:lime; font-weight: bold; }
     position: absolute;
     top: -8%;
     left: 40%;
+}
+
+.mobile-controls {
+    position: absolute;
+    left: 25%;
+    top: 16%;
+}
+
+.mobile-up {
+    cursor: pointer;
+}
+
+.mobile-down {
+    position: absolute;
+    left: 0%;
+    top: 420%;
+    cursor: pointer;
 }
 
 .icons {
@@ -157,6 +225,19 @@ a { color:lime; font-weight: bold; }
 
 .idle-uf4 { animation: idleuf4 1920ms  infinite; }
 
+.mobile-categories {
+    position: absolute;
+    opacity: 0;
+    z-index: 100;
+    top: 76%;
+}
+
+.slightly-elevated {
+    position: absolute;
+    top: 25%;
+    left: 120%;
+}
+
 @keyframes idleuf1 {
     31.25% {
         top: 0%;
@@ -242,5 +323,61 @@ a { color:lime; font-weight: bold; }
 
     100% {
         top: 45.5%;
+    }
+}
+
+@media (max-width: 600px) {
+    .license {
+        height: 12%;
+        width: 95%;
+        padding-top: 4%;
+    }
+    .cookies-sub {
+        width: 50%;
+    }
+    body {
+        width: 90%;
+        font-size: 0.9rem;
+        line-height: 20px;
+    }
+    .menu {
+        position: relative;
+        top: 50%;
+        -webkit-transform: translateX(-28.25%) translateY(-50%);
+        -ms-transform: translateX(-28.25%) translateY(-50%);
+        transform: translateX(-28.25%) translateY(-50%);
+    }
+    .mobile-controls {
+        margin-top: 8.5%;
+    }
+    .clock {
+        top: 33%;
+        left: -150%;
+    }
+    .sludgeballs {
+        opacity: 0;
+    }
+    .mobile-categories {
+        opacity: 1;
+    }
+    ul {
+        list-style: circle;
+        text-align: left;
+        -webkit-transform: translateX(-16px);
+        transform: translateX(-16px);
+    }
+    h1 {
+        line-height: 35px;
+        font-size: 1.75rem;
+    }
+    img {
+        max-width: 100%;
+    }
+    .navbar img{
+        max-width: 15%;
+    }
+    .header img{
+        max-width: 75%;
+        margin-top: 2.5%;
     }
 }
