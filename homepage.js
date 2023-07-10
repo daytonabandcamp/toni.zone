@@ -34,7 +34,6 @@ let mobileUp = document.getElementById("mobile-up");
 let mobileDown = document.getElementById("mobile-down");
 let mobileIcon = document.getElementById("mobile-icon");
 let mobileCategory = document.getElementById("mobile-category");
-let mobileInnards = document.querySelector(".mobile-innards")
 let uf3 = document.getElementById("uf3");
 let uf4 = document.getElementById("uf4");
 let title = document.getElementById("link-title");
@@ -43,6 +42,9 @@ let desc = document.getElementById("link-description");
 let innards = document.getElementById("focused-innards");
 let icons = document.getElementById("icons");
 
+let portrait = window.matchMedia("(orientation: portrait)");
+let orientationWarning = document.getElementById("warning");
+
 document.addEventListener('keydown', handler);
 
 document.addEventListener( 'visibilitychange' , function() {
@@ -50,6 +52,18 @@ document.addEventListener( 'visibilitychange' , function() {
         location.reload();
     }
 }, false );
+
+portrait.addEventListener("change", function(e) {
+    if (e.matches) {
+        orientationWarning.style.display = "none";
+        console.log("portrait!");
+    } else {
+        if (window.innerWidth < 600 || window.innerHeight < 600) {
+            orientationWarning.style.display = "flex";
+        }
+        console.log("landscape!");
+    }
+});
 
 function handler(e) {
     if (switchable) {
