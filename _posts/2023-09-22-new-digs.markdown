@@ -10,24 +10,24 @@ Yeah, the website looks pretty cool, but it's a bit... um... **incorrect.** For 
 So, what does this all mean? A **complete revamp,** of course! Expect **toni.zone 2.0** to be fully deployed by **October of 2023,** and expect it to be:
 
 ## More accessible
-    * A **less cryptic homepage** that is less keyboard-centric and easier to use!
-    * More **semantics** to make it easier to use with screen-readers!
-    * Better **SEO optimization** to help people understand what they're in for!
-    * Better **mobile design** that I won't just bullshit in five seconds 'cuz I have to!
+- A **less cryptic homepage** that is less keyboard-centric and easier to use!
+- More **semantics** to make it easier to use with screen-readers!
+- Better **SEO optimization** to help people understand what they're in for!
+- Better **mobile design** that I won't just bullshit in five seconds 'cuz I have to!
     
 ## More performant
-    * A **new loading screen** so you don't have to sit through the disgusting naked loading process!
-    * **Self-hosted images** because for some reason a lot of them are just on imgur... weird decision in hindsight!
+- A **new loading screen** so you don't have to sit through the disgusting naked loading process!
+- **Self-hosted images** because for some reason a lot of them are just on imgur... weird decision in hindsight!
     
 ## More fun
-    * More **focused** on art, music and HTML5 games
-    * **Relegation** of text updates, both small and large, to a side feed
-    * **Easter eggs,** because if you don't like them, you're a monster.
+- More **focused** on art, music and HTML5 games
+- **Relegation** of text updates, both small and large, to a side feed
+- **Easter eggs,** because if you don't like them, you're a monster.
     
 ## More beautiful
-    * **Quieter,** nicer UI sounds
-    * A more **straightforward** user experience with a more defined flow
-    * A more **consistent** aesthetic, the details of which I'm going to leave a surprise for now!
+- **Quieter,** nicer UI sounds
+- A more **straightforward** user experience with a more defined flow
+- A more **consistent** aesthetic, the details of which I'm going to leave a surprise for now!
 
 Hopefully, toni.zone 2.0 will help streamline the process of outputting creative content to the site even further! Expect a **lot more of it** once it's deployed! See you then, and enjoy the current layout while it's still here! ♥
 
