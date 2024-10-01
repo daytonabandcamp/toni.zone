@@ -1,0 +1,12 @@
+---
+layout: post
+title: "the 4 pillars of object oriented programming"
+date: 2024-09-25 08:00:00 -0700
+permalink: /art/2024/4pillars
+categories: art
+thumb: 4pillars
+description: "a small, oversimplified explanation of the four pillars of object oriented programming. (launch content)"
+---
+a small, quite possibly oversimplified explanation of the four pillars of object oriented programming. partially made for myself because i was having trouble understanding some of them! i don't quite remember when i made it. 
+
+![the 4 pillars of object oriented programming](/img/art/4pillars.png)

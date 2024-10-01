@@ -1,0 +1,11 @@
+---
+layout: post
+title: "chessbo"
+date: 2024-09-25 00:00:00 -0700
+permalink: /art/2024/chessbo
+categories: art
+thumb: chessbo
+description: "a couple years back, i 3d modeled a little chess pawn with some googly eyes. never in a million years did i think he would be as popular among friends as he ended up being."
+---
+a couple years back, i 3d modeled a little chess pawn with some googly eyes. never in a million years did i think he would be as popular among friends as he ended up being. i showed them this pawn that i made in a few minutes and a lot of them brought more praise to it than art i'd spent hours and hours perfecting! not that i'm complaining, of course. this sort of thing helps me figure out what to post and what not to post here!
+![chessbo](/img/art/chessbo.png)

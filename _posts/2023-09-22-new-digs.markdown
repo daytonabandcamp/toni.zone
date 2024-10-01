@@ -1,0 +1,42 @@
+---
+layout: post
+title: "New Digs"
+date: 2023-09-22 09:00:00 -0700
+permalink: /post/2023/new-digs
+categories: post
+thumb: cardz
+description: "a post from the days of yore about how the current incarnation of toni.zone (as of me writing this description) would be more accessible as well as more fun to browse!"
+---
+Yeah, the website looks pretty cool, but it's a bit... um... **incorrect.** For one thing, I kind of made it about writing things when I really don't love writing my thoughts out too much, especially for randos on the internet to see. I just get so self-conscious! Also, in terms of accessibility, it gets about an F minus. Besides the homepage (on a good day...) it's not even really much of a show of my graphic design skills! I've become a much better developer, y'know.
+
+So, what does this all mean? A **complete revamp,** of course! Expect **toni.zone 2.0** to be fully deployed by **October of 2023,** and expect it to be:
+
+<div class="cards">
+  <div class="card">
+    <h2 id="more-accessible">More accessible</h2>
+    <p>A <strong>less cryptic homepage</strong> that is less keyboard-centric and easier to use!</p>
+    <p>More <strong>semantics</strong> to make it easier to use with screen-readers!</p>
+    <p>Better <strong>SEO optimization</strong> to help people understand what they’re in for!</p>
+    <p>Better <strong>mobile design</strong> that I won’t just bullshit in five seconds ‘cuz I have to!</p>
+  </div>
+  <div class="card">
+    <h2 id="more-performant">More performant</h2>
+    <p>A <strong>new loading screen</strong> so you don’t have to sit through the disgusting naked loading process!</p>
+    <p><strong>Self-hosted images</strong> because for some reason a lot of them are just on imgur… weird decision in hindsight!</p>
+  </div>
+  <div class="card">
+    <h2 id="more-fun">More fun</h2>
+    <p>More <strong>focused</strong> on art, music and HTML5 games</p>
+    <p><strong>Relegation</strong> of text updates, both small and large, to a side feed</p>
+    <p><strong>Easter eggs,</strong> because if you don’t like them, you’re a monster.</p>
+  </div>
+  <div class="card">
+    <h2 id="more-beautiful">More beautiful</h2>
+    <p><strong>Quieter,</strong> nicer UI sounds</p>
+    <p>A more <strong>straightforward</strong> user experience with a more defined flow</p>
+    <p>A more <strong>consistent</strong> aesthetic, the details of which I’m going to leave a surprise for now!</p>
+  </div>
+</div>
+
+Hopefully, toni.zone 2.0 will help streamline the process of outputting creative content to the site even further! Expect a **lot more of it** once it's deployed! See you then, and enjoy the current layout while it's still here! ♥
+

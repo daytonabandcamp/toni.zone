@@ -1,0 +1,23 @@
+.header-background-404 {
+    position: absolute;
+}
+.header-text-404 {
+    position: relative;
+    top: 30px;
+    left: 250px;
+    z-index: 1;
+}
+.header-404 {
+    height: 160px;
+}
+a > img {
+    transition: 0.15s ease-out;
+    image-rendering: crisp-edges;
+    image-rendering: -moz-crisp-edges;
+}
+a > img:hover {
+    transform: scale(105%);
+}
+a:has(img):hover {
+    transform: none !important;
+}

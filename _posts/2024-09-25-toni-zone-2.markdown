@@ -1,0 +1,30 @@
+---
+layout: post
+title: "toni.zone 2.0"
+date: 2024-10-01 06:00:00 -0700
+permalink: /post/2024/tonizone2
+categories: post
+thumb: back
+description: "a smaller essay than that chronicling the premiere voyage of toni.zone, but an essay nonetheless. read through to hear horror stories of css selectors and url search parameters! take a whole seat, but you'll only need the edge!"
+---
+we are so back.
+
+at long last, toni.zone 2.0 has finally arrived! (depending on when *you* arrive, it might need a second to bake before it's fully functional, but that's web development! can't hide behind a password unless you have a trillion dollars.) honestly, i had a very different idea for how this redesign would play out in the naive times. i wanted to make the whole site look like windows xp, with a taskbar and a start menu and icons and everything, but... nah. it would've been murder to make it look even half-decent on mobile devices.
+
+as i laid out in my public plans so long ago, i focused more than anything on making the site more accessible, more performant, more fun and more beautiful, and i think i accomplished all of those things to the best of my ability! the site doesn't have a single accessibility flaw, (as far as firefox tells me, anyway...) i made the size of the main box fit all the [960x540 HTML5 games](/gamez) i love to make so very much, self-hosted the images and added some easter eggs! (though, calling them that is a stretch. they're easter eggs in the sense that easter egg hunts usually only involve small children. that is to say they're pretty easy to find.)
+
+honestly, the only reason i procrastinated on this for so long (and yes, i was procrastinating. sue me) was because it was **so darn intimidating!** adding a search function, fiddling with flexboxes and margins, and making a nice-looking mobile design were all very taxing. silly enough, though, i think the hardest part might have been finding the right font.
+
+tahoma is my favorite font. it's so fantastic and it makes me giddy just reading something in it! it manages to bring me back to my humble electronic childhood while staying grounded in reality, like a TV show that went on for long enough for its fans to want it to be cancelled... except better. but in exactly that vein... i kind of wanted tahoma to be cancelled!
+
+your favorite is great, but sometimes you want something different, like when you go to cold stone creamery and you're eyeing the strawberry, or like an analogy that doesn't add anything to a blog post about web design. hence, i decided to go for ubuntu. it's a web font, it's nice and public domain, it's very readable but just eccentric enough to be novel... and i'm honestly thinking of switching to linux soon. i want to get used to the look! can't have that new [recall](https://support.microsoft.com/en-us/windows/retrace-your-steps-with-recall-aa03f8a0-a78b-4b3e-b0a1-2eb8ac48701c) thing spying on me every five seconds... **literally.**
+
+this was a pretty crazy undertaking, though! as many crazy, unfettered and haphazard css rules as there are, i still consider this the most stable and put-together website i've ever built. as much as i've already known the basics of HTML and CSS for a long time, this redesign helped me learn a ton. when i first attempted it back in 2023, i couldn't tell a `grid-row` from a `flex-grow`. the layout of the first incarnation of the homepage took me two or three days to get right! this time, it only took me a couple hours!
+
+perhaps the most time-consuming endeavor was making a thumbnail for every post and every piece of art. (even if it's hard to see some of them, it's good to have them in handy if they ever do come into play.) did i look like i wanted to try desperately to replicate the same exact design 20 times in a row and keep doing it for the rest of my life? no! so... i learned [imagemagick](https://imagemagick.org/index.php) and automated the entire process! using imagemagick on windows might be the most frustrating thing i've ever had to deal with, and i'm an american trans woman, so that's saying something! it was so worth it, though. such a sense of accomplishment!
+
+the most important thing i learned, though, was to **never be afraid to accept help** when i'm offered it. i took pride in building the first incarnation of toni.zone from scratch, and it was shit. the number one philosophy i went into building toni.zone 2.0 with was... accessibility. the number *two* philosophy, though, was... um... making a good mobile design. the number *THREE* philosophy was to **not make it from scratch!**
+
+i basically completely stole this design from my first attempt at this redesign and retooled it so it would work with jekyll and it looked a bit less messy. the background was totally stolen from a ui developer named momika shrestha i found on a [random css patterns website](https://freefrontend.com/), i borrowed all of the search code from a library called [lunr](https://lunrjs.com/), and i didn't even *attempt* making the easily-updatable status system before remembering that the amazing [status.cafe](https://status.cafe) existed. (seriously, sign up for an account. it's worth the wait to be accepted in.) and that's just the surface of the iceberg... i can't even *quantify* quite how much code i copy-pasted from stack overflow!
+
+is it all gonna be worth it, though? well... i can't shake the idea that this is all gonna go tits up again quite yet--it is my *fourth attempt* at starting up something like this and i didn't let any of the first three survive--but i remain hopeful this time! i don't like going into the details on the public internet, but my life is changing quite rapidly and it's changing in a way that will finally allow me to spend a good fraction of my time pursuing this project! maybe the only reason i don't like writing is because i'm always writing in private, so i'm always compelled to write about my demons. let's change that! ♥

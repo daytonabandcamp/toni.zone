@@ -1,0 +1,222 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/tonizone.css">
+    <link rel="stylesheet" href="/styles/homepage.css">
+    <title>home - toni.zone</title>
+    <!-- meta open graph stuff-->
+    
+    {% if page.title %}
+        <meta content="{{ page.title }}" property="og:title">
+    {% else %}
+        <meta content="{{ site.title }}" property="og:site_name">
+    {% endif %}
+    {% if page.title %}
+        <meta content="article" property="og:type">
+    {% else %}
+        <meta content="website" property="og:type">
+    {% endif %}
+    {% if page.description %}
+        <meta content="{{ page.description }}" property="og:description">
+    {% else %}
+        <meta content="{{ site.description }}" property="og:description">
+    {% endif %}
+    {% if page.url %}
+        <meta content="{{ site.url }}{{ page.url }}" property="og:url">
+    {% endif %}
+    {% if page.date %}
+        <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
+    {% endif %}
+    {% if page.thumb %}
+        <meta content="{{ site.url }}/img/thumb/{{ page.thumb }}-thumb.png" property="og:image">
+    {% else %}
+        <meta content="{{ site.url }}/img/og-thumb.png" property="og:image">
+    {% endif %}
+    {% if page.categories %}
+        {% for category in page.categories limit:1 %}
+            <meta content="{{ category }}" property="article:section">
+        {% endfor %}
+    {% endif %}
+</head>
+<body>
+    <!-- html is so fucking ridiculous look at how much i have to do to have BUBBLES -->
+    <section>
+        <div class="bubbles">
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+        </div>
+    </section>
+    <div class="global-container">
+        <header class="header">
+            <div class="logo">
+                <a href="/" class="logo-link"><img src="/img/logo.gif" class="logo-logo" alt="toni.zone logo"></a>
+                <div class="squeaky" id="squeaky" alt="squeeze me, i squeak!" role="button" tabindex="0">
+                    <img src="/img/toni-full.png" id="logo-img" class="logo-img" alt="toni's head with a speech bubble next to it.">
+                    <div class="splash" id="splash">mobile madness!</div>
+                </div>
+            </div>
+            <div class="navbar">
+                <nav class="links">
+                    <a href="/music/2024" id="ui01">music</a> •
+                    <a href="/art/2024" id="ui02">art</a> •
+                    <a href="/gamez" id="ui03">gamez</a> •
+                    <a href="/posts/2024" id="ui04">posts</a>
+                </nav>
+                <div class="clock" id="clock"></div>
+            </div>
+            <div class="search">
+                <div class="search-bar">
+                    <input size="15" id="gay_search" type="search" placeholder="gay search!" role="searchbox">
+                    <button onclick="window.location.href=`/search.html?q=${document.getElementById('gay_search').value}`">🔍</button>
+                </div>
+                <label for="gay_search"><small><small>powered by <a href="https://lunrjs.com/" target="_blank" rel="noopener noreferrer">lunr</a></small></small></label>
+            </div>
+        </header>
+        <nav class="mobile-nav">
+            <div class="mobile-links"><a href="/music/2024">music</a> • <a href="/art/2024">art</a> • <a href="/gamez/2024">gamez</a> • <a href="/posts/2024">posts</a></div>
+            <p style="margin: 0">|</p>
+            <div class="mobile-clock" id="mobile-clock"></div>
+        </nav>
+        <div class="mobile-search">
+            <input size="20" id="mobile_search" type="search" placeholder="gay search!" role="searchbox"><button onclick="window.location.href=`/search.html?q=${document.getElementById('mobile_search').value}`">🔍</button>
+        </div>
+        <main class="body">
+            <aside class="sidebar">
+                <div>
+                    <div class="latest">
+                        <h2 style="margin: 0">latest:</h2>
+                        {% for post in site.posts limit:3 %}
+                        <p><a href="{{ post.url }}">{{ post.title }}</a><br><small>{{ post.date | date: "%b %-d, %Y" }} [{{ post.categories }}]</small></p>
+                        {% endfor %}
+                    </div>
+                    <div class="license" id="license">This work is licensed under a creative commons <a href="https://creativecommons.org/licenses/by/4.0/deed.en">CC BY 4.0</a> license. | <a href="/privacy">privacy policy</a></div>
+                </div>
+                <div class="statuscafe" id="statuscafe" role="status">
+                    <div id="statuscafe-username">loading...</div>
+                    <div id="statuscafe-content"></div>
+                    <small>powered by <a href="https://status.cafe">status.cafe</a></small>
+                </div>
+                <script src="https://status.cafe/current-status.js?name=tonizone" defer></script>
+                <div class="buttons">
+                    <button onclick="showButtons();" id="buttons-show" style="background-color: #00000000; border: none; font-family: 'Ubuntu'; font-size: small;">▾ show all buttons</button>
+                    <div class="buttons-list" id="buttons-list">
+                        <a href="https://toni.zone"><img src="/img/tonizone_button.gif" alt="toni.zone"></a>
+                        <a href="https://status.cafe"><img src="https://status.cafe/assets/button.png" alt="status cafe"/></a>
+                        <a href="https://firefox.com"><img src="https://yesterhost.neocities.org/archive/buttons/button102.gif" alt="get firefox"></a>
+                        <a href="https://yesterhost.neocities.org"><img src="https://yesterhost.neocities.org/archive/buttons/button149.gif" alt="transgender"></a>
+                        <a href="https://yesterhost.neocities.org"><img src="https://yesterhost.neocities.org/archive/buttons/button302.png" alt="she/her pronouns"></a>
+                        <a href="https://yesterhost.neocities.org"><img src="https://yesterhost.neocities.org/archive/buttons/button191.png" alt="nintendo switch"></a>
+                        <a href="https://yesterhost.neocities.org"><img src="https://yesterhost.neocities.org/archive/buttons/button58.gif" alt="this site is so damn gay"></a>
+                        <a href="https://yesterhost.neocities.org"><img src="https://yesterhost.neocities.org/archive/buttons/button66.gif" alt="eat the rich"></a>
+                        <a href="https://yesterhost.neocities.org"><img src="https://yesterhost.neocities.org/archive/buttons/button9.png" alt="nedscape now"></a>
+                        <a href="https://anlucas.neocities.org"><img src="https://anlucas.neocities.org/getacomp.jpg" alt="get a computer now"></a>
+                        <a href="https://anlucas.neocities.org"><img src="https://anlucas.neocities.org/made_with_windows.gif" alt="made with windows"></a>
+                        <a href="https://jekyllrb.com"><img src="https://anlucas.neocities.org/PoweredByRuby.png" alt="powered by ruby"></a>
+                        <a href="https://anlucas.neocities.org"><img src="https://anlucas.neocities.org/RaveNow3.gif" alt="rave now"></a>
+                        <a href="https://capstasher.neocities.org"><img src="https://capstasher.neocities.org/88x31Buttons/5srvdSo.gif" alt="this site is miku approved"></a>
+                        <a href="https://capstasher.neocities.org"><img src="https://capstasher.neocities.org/88x31Buttons/66.gif" alt="aol instant messenger"></a>
+                        <a href="https://capstasher.neocities.org"><img src="https://capstasher.neocities.org/88x31Buttons/adobe_fpbutton.gif" alt="get bluemaxima's flashpoint web game archive"></a>
+                    </div>
+                </div>
+            </aside>
+            <div class="content-container">
+                <article class="content">
+                    <h1 class="article-title" id="homepage-title">home</h1>
+                    <div class="homepage">
+                        <div class="homepage-half">
+                            <div class="home-featured homepage-box">
+                                {% assign featuredPost = site.posts.first %}
+                                <a href="{{ featuredPost.permalink }}"><img src="/img/thumb/{{ featuredPost.thumb }}-thumb.png"></a><br>
+                                <a href="{{ featuredPost.permalink }}">{{ featuredPost.title }}</a><br>
+                                <small>({{ featuredPost.categories.first }}) {{ featuredPost.date | date: "%b %-d, %Y" }}</small>
+                                <p><strong>featured:</strong> {{featuredPost.description}}</p>
+                            </div>
+                            <div class="home-links desktop-home-links homepage-box">
+                                <a href="/about-me">about me</a> • <a href="/contact">contact</a> • <a href="https://daytona.bandcamp.com">bandcamp</a> •<br><a href="/privacy">privacy policy</a> • <a href="javascript:homePageNameChange();">make yourself at home</a>
+                            </div>
+                        </div>
+                        <div class="homepage-half">
+                            <div class="homepage-box">
+                                <h2>latest (each category)</h2>
+                                <div class="home-latest">
+                                    {% assign postLatest = site.categories.post.first %}
+                                    {% assign artLatest = site.categories.art.first %}
+                                    {% assign musicLatest = site.categories.music.first %}
+                                    {% assign gamezLatest = site.categories.gamez.first %}
+                                    <div class="home-latepost">
+                                        <a href="{{ postLatest.permalink }}">{{ postLatest.title }}</a><br>
+                                        <small>(post) {{ postLatest.date | date: "%b %-d, %Y" }}</small>
+                                    </div>
+                                    <div class="home-latepost">
+                                        <a href="{{ artLatest.permalink }}">{{ artLatest.title }}</a><br>
+                                        <small>(art) {{ artLatest.date | date: "%b %-d, %Y" }}</small>
+                                    </div>
+                                    <div class="home-latepost">
+                                        <a href="{{ musicLatest.permalink }}">{{ musicLatest.title }}</a><br>
+                                        <small>(music) {{ musicLatest.date | date: "%b %-d, %Y" }}</small>
+                                    </div>
+                                    <div class="home-latepost">
+                                        <a href="{{ gamezLatest.permalink }}">{{ gamezLatest.title }}</a><br>
+                                        <small>(gamez) {{ gamezLatest.date | date: "%b %-d, %Y" }}</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="homepage-box" style="flex-grow: 1;">
+                                <h2>newest art <a href="/art/2024">(see more)</a></h2>
+                                <div class="home-gallery">
+                                    {% for post in site.categories.art limit:4 %}
+                                        <a href="{{ post.permalink }}"><img src="/img/thumb/{{ post.thumb }}-thumb.png" width="100"></a>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="home-links homepage-box mobile-homelinks">
+                            <a href="/about-me">about me</a> • <a href="/contact">contact</a> • <a href="https://daytona.bandcamp.com">bandcamp</a> •<br><a href="/privacy">privacy policy</a> • <a href="javascript:homePageNameChange();">make yourself at home</a>
+                        </div>
+                    </div>
+                </article>
+                <footer class="mobile-license" style="margin-top: 8px; text-align: center;">
+                    <div id="mobile-statuscafe" class="statuscafe" role="status">loading...<br><small>powered by <a href="https://status.cafe">status.cafe</a></small></div>
+                    <div>This work is licensed under a creative commons <a href="https://creativecommons.org/licenses/by/4.0/deed.en">CC BY 4.0</a> license. | <a href="/privacy">privacy policy</a></div>
+                        <div class="mobile-buttons">
+                        <a href="https://toni.zone"><img src="/img/tonizone_button.gif" alt="toni.zone"></a>
+                        <a href="https://status.cafe"><img src="https://status.cafe/assets/button.png" alt="status cafe"/></a>
+                        <a href="https://firefox.com"><img src="https://yesterhost.neocities.org/archive/buttons/button102.gif" alt="get firefox"></a>
+                        <a href="https://yesterhost.neocities.org"><img src="https://yesterhost.neocities.org/archive/buttons/button149.gif" alt="transgender"></a>
+                        <a href="https://yesterhost.neocities.org"><img src="https://yesterhost.neocities.org/archive/buttons/button302.png" alt="she/her pronouns"></a>
+                        <a href="https://yesterhost.neocities.org"><img src="https://yesterhost.neocities.org/archive/buttons/button191.png" alt="nintendo switch"></a>
+                        <a href="https://yesterhost.neocities.org"><img src="https://yesterhost.neocities.org/archive/buttons/button58.gif" alt="this site is so damn gay"></a>
+                        <a href="https://yesterhost.neocities.org"><img src="https://yesterhost.neocities.org/archive/buttons/button66.gif" alt="eat the rich"></a>
+                        <a href="https://yesterhost.neocities.org"><img src="https://yesterhost.neocities.org/archive/buttons/button9.png" alt="nedscape now"></a>
+                        <a href="https://anlucas.neocities.org"><img src="https://anlucas.neocities.org/getacomp.jpg" alt="get a computer now"></a>
+                        <a href="https://anlucas.neocities.org"><img src="https://anlucas.neocities.org/made_with_windows.gif" alt="made with windows"></a>
+                        <a href="https://jekyllrb.com"><img src="https://anlucas.neocities.org/PoweredByRuby.png" alt="powered by ruby"></a>
+                        <a href="https://anlucas.neocities.org"><img src="https://anlucas.neocities.org/RaveNow3.gif" alt="rave now"></a>
+                        <a href="https://capstasher.neocities.org"><img src="https://capstasher.neocities.org/88x31Buttons/5srvdSo.gif" alt="this site is miku approved"></a>
+                        <a href="https://capstasher.neocities.org"><img src="https://capstasher.neocities.org/88x31Buttons/66.gif" alt="aol instant messenger"></a>
+                        <a href="https://capstasher.neocities.org"><img src="https://capstasher.neocities.org/88x31Buttons/adobe_fpbutton.gif" alt="get bluemaxima's flashpoint web game archive"></a>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <script src="/js/tonizone.js"></script>
+    <script src="/js/homepage.js"></script>
+</body>
+</html>
+

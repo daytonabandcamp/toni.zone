@@ -1,0 +1,12 @@
+---
+layout: post
+title: "flamelin"
+date: 2024-09-25 00:00:00 -0700
+permalink: /art/2024/flamelin
+categories: art
+thumb: flamelin
+description: "a kobold-esque minecraft mob i came up with in 2021. made in response to the relative lack of updates to warm biomes announced during minecraft live 2021. perhaps a bit ambitious!"
+---
+while i'm not quite sure exactly when i drew a lot of these launch content things--mainly because i'm too lazy to go through years and years of discord history to find out for sure--i get the feeling i drew this in response the disappointment i found myself feeling after minecraft live 2021. as much as i loved the allay--the eventual winner of the 2021 mob vote--i was very sad that we were not getting an update to warm biomes. to combat this disappointment, i drew a... perhaps a bit ambitious... concept for a very helpful and adorable kobold-like desert mob! read up on what it can do!
+
+![see ya later gavial](/img/art/flamelin.png)

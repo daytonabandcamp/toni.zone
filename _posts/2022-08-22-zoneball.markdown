@@ -1,0 +1,13 @@
+---
+layout: post
+title: "Zoneball"
+date: 2022-08-22 21:18:00 -0700
+categories: art
+permalink: /art/2022/zoneball
+thumb: zoneball
+description: "the ol' zoneball. it used to spin around on the homepage of the website before i made it more accessible a year or so later! one of my many blender creations."
+
+---
+A ~~couple days~~ few months ago, I spent about 3 hours making this little globe lookin' ball so it can spin around this website's homepage! Maybe you folks on mobile aren't able to see it in its full glory, so here it is:
+<br>
+![zoneball](/img/art/zoneball.gif)

@@ -1,0 +1,12 @@
+---
+layout: post
+title: "bitwise operators with toni"
+date: 2024-09-25 08:15:00 -0700
+permalink: /art/2024/bitwise
+categories: art
+thumb: bitwise
+description: "a delightful (but quite possibly dubious) and oddly golang-centric tutorial about bitwise operators i made when i was 20! being entirely honest, i have not had to use them since. i still think the art is cute, though!"
+---
+i made this (and corrected it as best i could) a *while* ago, so... please don't use this as an educational resource. regardless, see how much you can learn about bitwise operators from this weirdly formatted, silly-looking aseprite drawing from the sproutless days of yore!
+<br>
+![bitwise operators with toni](/img/art/bitwise.png)

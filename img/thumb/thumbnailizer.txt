@@ -1,0 +1,1 @@
+magick dental.png -resize 512x -gravity North -crop 512x288+0+0 -gravity SouthWest -stroke black -strokewidth 12 -font Ubuntu-Mono -pointsize 108 -annotate +10+20 dental -stroke none -fill white -annotate +8+22 dental +repage dental1.png

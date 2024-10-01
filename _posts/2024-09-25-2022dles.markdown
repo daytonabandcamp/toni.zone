@@ -1,0 +1,11 @@
+---
+layout: post
+title: "2022dles"
+date: 2024-09-25 00:00:00 -0700
+permalink: /art/2024/2022dles
+categories: art
+thumb: 2022dles
+description: "a very silly page full of ms paint doodles that i drew at some point in 2022 that i've neglected to post until now because the site needs launch content!"
+---
+a bunch of ms paint doodles that i drew sometime in 2022. (fuck if i remember.) highlights include... myself as a phineas and ferb character! mermaid man with noodle limbs! dr. nick! and many more!
+![2022dles](/img/art/2022dles.png)

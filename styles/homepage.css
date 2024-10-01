@@ -1,0 +1,119 @@
+.homepage {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    margin-top: 8px;
+    height: 504px;
+}
+.homepage img {
+    object-fit:contain;
+}
+.homepage-half {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.article-title {
+    transform-origin: center left;
+}
+.homepage-box {
+    background-color: #00000000;
+    border: 1px solid #444;
+    padding: 12px;
+    box-sizing: border-box;
+    background-color: black;
+}
+.home-featured {
+    flex-grow: 1;
+}
+.home-featured img {
+    width: 100%;
+    transition: 0.15s ease-out !important;
+}
+.home-featured img:hover {
+    transform: scale(102%) !important;
+}
+.home-featured a:has(img):hover {
+    transform: none !important;
+}
+h2 {
+    margin-top: 0;
+}
+p {
+    margin-bottom: 0;
+    color: darkgray;
+}
+p strong {
+    color: white;
+}
+.home-links {
+    text-align: center;
+    flex-grow: 1;
+}
+.home-gallery {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 2fr 2fr;
+    gap: 8px;
+}
+.home-gallery img {
+    width: 100%;
+}
+.homepage a > img {
+    transition: 0.25s ease-out;
+}
+.homepage a > img:hover {
+    transform: scale(105%);
+}
+.homepage a:has(img):hover {
+    transform: none !important;
+}
+.home-latest {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 2fr 2fr;
+    gap: 8px;
+}
+.home-latest div {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.home-latest div > a {
+    overflow: hidden;  /* "overflow" value must be different from "visible" */                
+    text-overflow: ellipsis;
+    height: 1em;
+    white-space: nowrap;
+}
+.mobile-homelinks {
+    display: none;
+}
+@media only screen and (max-width: 720px) {
+    .homepage {
+        flex-direction: column;
+        height: auto;
+    }
+    .homepage-half {
+        width: 100%;
+    }
+    .mobile-homelinks {
+        display: block;
+    }
+    .desktop-home-links {
+        display: none;
+    }
+}
+@keyframes homechange {
+    0% {
+        transform: scale(100%);
+        animation-timing-function: ease-out;
+    }
+    10% {
+        transform: scale(105%);
+        animation-timing-function: ease-in-out;
+    }
+    100% {
+        transform: scale(100%);
+    }
+}

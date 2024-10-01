@@ -1,0 +1,18 @@
+#ppCanvas {
+	display: inline-table;
+	image-rendering: crisp-edges;
+	image-rendering: -moz-crisp-edges;
+	background-image: url(/html5/picnic-panic/img/loading.png);
+	width: 100%;
+	max-width: 960px;
+	max-height: 540px;
+	overflow: hidden;
+}
+.container {
+	max-width: 960px;
+	overflow: hidden;
+}
+body {
+	margin: 0;
+	overflow: hidden;
+}
