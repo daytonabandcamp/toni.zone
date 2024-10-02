@@ -11,43 +11,56 @@ let gamestate = "preload";
 
 var sfx = {
 	bump: new Howl({
-		src: ['sfx/bump.wav']
+		src: ['sfx/bump.wav'],
+		html5: true
 	}),
 	match: new Howl({
-		src: ['sfx/match.wav']
+		src: ['sfx/match.wav'],
+		html5: true
 	}),
 	match1: new Howl ({
-		src: ['sfx/match-combo1.wav']
+		src: ['sfx/match-combo1.wav'],
+		html5: true
 	}),
 	match2: new Howl ({
-		src: ['sfx/match-combo2.wav']
+		src: ['sfx/match-combo2.wav'],
+		html5: true
 	}),
 	match3: new Howl ({
-		src: ['sfx/match-combo3.wav']
+		src: ['sfx/match-combo3.wav'],
+		html5: true
 	}),
 	match4: new Howl ({
-		src: ['sfx/match-combo4.wav']
+		src: ['sfx/match-combo4.wav'],
+		html5: true
 	}),
 	match5: new Howl ({
-		src: ['sfx/match-combo5.wav']
+		src: ['sfx/match-combo5.wav'],
+		html5: true
 	}),
 	match10: new Howl ({
-		src: ['sfx/match-combo10.wav']
+		src: ['sfx/match-combo10.wav'],
+		html5: true
 	}),
 	swap: new Howl({
-		src: ['sfx/swap.wav']
+		src: ['sfx/swap.wav'],
+		html5: true
 	}),
 	warning: new Howl({
-		src: ['sfx/warning.wav']
+		src: ['sfx/warning.wav'],
+		html5: true
 	}),
 	comboLossSound: new Howl({
-		src: ['sfx/combo-loss.wav']
+		src: ['sfx/combo-loss.wav'],
+		html5: true
 	}),
 	gameOver: new Howl({
-		src: ['sfx/game-over.wav']
+		src: ['sfx/game-over.wav'],
+		html5: true
 	}),
 	youWin: new Howl({
-		src: ['sfx/win.wav']
+		src: ['sfx/win.wav'],
+		html5: true
 	})
 }
 
