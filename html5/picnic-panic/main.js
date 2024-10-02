@@ -88,20 +88,17 @@ let music = {
 	menu: new Howl({
 		src: ['music/menu.mp3'],
 		autoplay: false,
-		loop: true,
-		html5: true
+		loop: true
 	}),
 	ingame: new Howl({
 		src: ['music/ingame.mp3'],
 		autoplay: false,
-		loop: true,
-		html5: true
+		loop: true
 	}),
 	results: new Howl({
 		src: ['music/results.mp3'],
 		autoplay: false,
-		loop: true,
-		html5: true
+		loop: true
 	})
 }
 
