@@ -12,6 +12,8 @@ description: "picnic panic! is a fruit themed clone of tetris attack and shock s
 ## controls
 use your **mouse** to click on the board and swap two fruits! press **W** or **space** or **left-click** on the berry bumper to make a new row of fruit with the berry bumper to match more fruit for combos! learn more in the in-game instructions!
 ## changelog
+- 1.1.01: the ever-impressive, the long-contained (october 1, 2024)
+    - converted unsupported .ogg files to .mp3 files. (safari does not support the ogg container)
 - 1.1: quality of life! (september 25, 2024)
     - toni.zone is now picnic panic's forever home!
     - optimized canvas display for mobile devices! (game is still optimized for desktop, but it's easier for mobile users to play now!)

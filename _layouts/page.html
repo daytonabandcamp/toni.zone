@@ -102,7 +102,7 @@
                     <div class="latest">
                         <h2 style="margin: 0">latest:</h2>
                         {% for post in site.posts limit:3 %}
-                        <p><a href="{{ post.url }}">{{ post.title }}</a><br><small>{{ post.date | date: "%b %-d, %Y" }} [{{ post.categories }}]</small></p>
+                        <p {% if forloop.last %}style="margin-bottom: 0.5em !important;"{% endif %}><a href="{{ post.url }}">{{ post.title }}</a><br><small>{{ post.date | date: "%b %-d, %Y" }} [{{ post.categories }}]</small></p>
                         {% endfor %}
                     </div>
                     <div class="license" id="license">This work is licensed under a creative commons <a href="https://creativecommons.org/licenses/by/4.0/deed.en">CC BY 4.0</a> license. | <a href="/privacy">privacy policy</a></div>
