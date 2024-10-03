@@ -4,7 +4,7 @@ title: "things that go creak in the night"
 date: 2024-10-03 03:55:00 -0700
 permalink: /art/2024/creak
 categories: art
-thumb: creak
+thumb: creaking
 description: "i recently got my hands on the first winter drop minecraft snapshot featuring the creaking, and i really like it! the creaking is just so elusive, though, that i had to take a stab at drawing him myself!"
 ---
 ![the creaking](/img/art/creaking.gif)
