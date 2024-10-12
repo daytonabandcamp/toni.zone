@@ -668,6 +668,8 @@ class InvState {
         Game.credits += InvState.currentItem.price;
         if (InvState.currentItem.name == "Unknown Pill") {
             LootState.handleAchievements("Shady Dealings");
+        } else if (InvState.currentItem.name == "Penny") {
+            LootState.handleAchievements("Take a Penny");
         }
         if (Game.inventory[InvState.selectedIndex].count-1==0) {
             Game.inventory.splice(InvState.selectedIndex,1);
@@ -1027,7 +1029,7 @@ class Game {
         ctx.fillStyle = "black"
         if (Game.state != RestartState && Game.state != PreloaderState) {
             ctx.fillText(`Credits: ${Game.credits}`,5,24);
-            ctx.fillText("Lootcreate 1.4.01",5,48);
+            ctx.fillText("Lootcreate 1.4.02",5,48);
             if (LootState.cloverTurnsLeft>0) {
                 ctx.fillText(`${LootState.luck==777?"Godly":"Lucky"} Turns Left: ${LootState.cloverTurnsLeft}`,5,72);
             }
