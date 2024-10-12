@@ -7,7 +7,7 @@ categories: gamez
 thumb: lootcreate
 description: "lootcreate is a game all about opening crates, getting loot, combining it, and selling the results to open up more crates! [or keeping it to sell later!] there are 64 different pieces of loot to collect, from common to mega godly!"
 ---
-<iframe frameborder="0" src="/html5/lootcreate/game.html"></iframe>
+<iframe frameborder="0" src="/html5/lootcreate/game.html" style="user-select: none;"></iframe>
 **lootcreate** is a game all about opening crates, getting loot, combining it, and selling the results to open up more crates! [or keeping it to sell later!] there are 64 different pieces of loot to collect, from common to mega godly!
 
 this game uses **cookies** to save game progress when indicated. cookies are only used if you consent to them by pressing **"i agree."** otherwise, cookies will not be used and your progress will not be saved. you can also manage cookie preferences through settings.
@@ -16,6 +16,11 @@ this game uses **cookies** to save game progress when indicated. cookies are onl
 use your **mouse** to click on the big crate and other icons to procure, sell, keep and combine loot! press **Z** to sell loot right from out of the big crate or from your inventory, and press **X** to keep loot in your inventory!
 
 ## changelog
+- 1.4.01: the ghastly ghostly patch (october 12, 2024)
+    - added adjacent "ghost" items to the inventory (so you don't forget where you are)
+    - fixed numerous bugs, mostly pertaining to achievements
+    - removed console.log spam
+    - not fixing the delta time stuff sorry
 - 1.4: the update of crate im-port-ance (october 12, 2024)
     - toni.zone is now lootcreate's forever home!
     - rebuilt game in html5 canvas

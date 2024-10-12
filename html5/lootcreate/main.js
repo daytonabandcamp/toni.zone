@@ -14,7 +14,6 @@ class Mouse {
             canvas.addEventListener("touchstart",e=>{
                 Mouse.x = Math.floor((e.targetTouches[0].clientX - canvas.getBoundingClientRect().left) / (container.offsetWidth/960));
                 Mouse.y = Math.floor((e.targetTouches[0].clientY - canvas.getBoundingClientRect().top) / (container.offsetHeight/540));
-                console.log(Mouse.x,Mouse.y);
                 Button.buttons.forEach(button=>{button.update()});
             })
         } else {
@@ -197,7 +196,7 @@ class ItemDisplay extends Sprite {
         }
     }
     draw() {
-        if (this.image.src) {
+        if (ItemDisplay.image.src) {
             ctx.drawImage(
                 ItemDisplay.image,
                 (this.id%8)*32, //column X
@@ -305,7 +304,7 @@ class SFX {
 
 class LootState {
     static luck = 0;
-    static cloverTurnsLeft;
+    static cloverTurnsLeft = 0;
     static isCrateMovingUp = false;
     static itemSeed = (Math.random() + LootState.luck)/(LootState.luck+1);
     static itemTier = LootState.getItemTier(LootState.itemSeed);
@@ -447,17 +446,16 @@ class LootState {
         if (achievement){
             Achievement.unlock(Game.findAchievement(achievement));
         }
-        if (LootState.itemTier.id>=3) {
-            Achievement.unlock(Game.findAchievement("Steak Your Claim"));
-        }
-        if (LootState.itemTier.id>=6) { 
-            Achievement.unlock(Game.findAchievement("Not Bummer"));
-        }
-        if (LootState.itemTier.id>=7) {
-            Achievement.unlock(Game.findAchievement("Next to Cleanliness"));
-        }
         if (LootState.isCrateMovingUp){
-            console.log(LootState.item.name=="Toy Truck");
+            if (LootState.itemTier.id>=3) {
+                Achievement.unlock(Game.findAchievement("Steak Your Claim"));
+            }
+            if (LootState.itemTier.id>=6) { 
+                Achievement.unlock(Game.findAchievement("Not Bummer"));
+            }
+            if (LootState.itemTier.id>=7) {
+                Achievement.unlock(Game.findAchievement("Next to Cleanliness"));
+            }
             switch (LootState.item.name) {
                 case "Toy Truck":
                     Achievement.unlock(Game.findAchievement("Toot Toot!"));
@@ -483,14 +481,13 @@ class LootState {
         if (Game.credits >= 100) {
             Achievement.unlock(Game.findAchievement("Me First Dollar"));
         }
-        if (Game.credits >= 1000) {
+        if (Game.credits >= 10000) {
             Achievement.unlock(Game.findAchievement("That's Rich, I'll Say."));
         }
         if (Game.credits >= 1000000) {
             Achievement.unlock(Game.findAchievement("Who Wants to Be"));
         }
         if (Game.crates == 1) {
-            console.log("cool");
             Achievement.unlock(Game.findAchievement("Lootcreate"));
         }
         if (Game.crates == 100) {
@@ -585,6 +582,7 @@ class InvState {
     static selectedIndex = 0;
     static currentItem;
     static currentItemDisplay;
+    static adjacentItemDisplays = [];
     static itemName;
     static itemNameWidth;
     static itemDesc;
@@ -611,9 +609,20 @@ class InvState {
     },"invPrev",[InvState,CombineState]);
     static init(isReturning) {
         InvState.selectedIndex=isReturning?0:Math.min(Math.max(InvState.selectedIndex,0),Game.inventory.length-1);
+        InvState.adjacentItemDisplays = [];
         if (Game.inventory.length) {
+            var hardCodedPos = [142,246,0,614,718]
             InvState.currentItem = Items.list[Game.inventory[InvState.selectedIndex].id];
             InvState.currentItemDisplay = new ItemDisplay(canvas.width/2-96,canvas.height/2-96,6,InvState.currentItem.id);
+            for (let i = -2; i <= 2; i++) {
+                if (i == 0) { continue; }
+                if (Game.inventory[InvState.selectedIndex+i]) {
+                    var loopItem = Items.list[Game.inventory[InvState.selectedIndex+i].id];
+                    InvState.adjacentItemDisplays.push(new ItemDisplay(hardCodedPos[i+2],canvas.height/2-48,3,loopItem.id));
+                } else {
+                    InvState.adjacentItemDisplays.push(new ItemDisplay(hardCodedPos[i+2],100,3,4));
+                }
+            }
         } else {
             InvState.currentItem = null;
             InvState.currentItemDisplay = new ItemDisplay(canvas.width/2-96,canvas.height/2-96,6,4);
@@ -636,6 +645,15 @@ class InvState {
             InvState.itemDesc = "Click on the crate and press X to keep some loot in your inventory!";
         }
         InvState.currentItemDisplay.draw();
+        InvState.adjacentItemDisplays.forEach((display)=>display.draw());
+        if (LootState.cloverTurnsLeft == 0) {
+            ctx.globalCompositeOperation = "lighter";
+            ctx.fillStyle="#888";
+            ctx.fillRect(119,196,251,155);
+            ctx.fillRect(600,197,236,149);
+            ctx.fillStyle="black";
+            ctx.globalCompositeOperation = "source-over";
+        }
         ctx.font = "36px germar";
         InvState.itemNameWidth = ctx.measureText(InvState.itemName).width;
         ctx.fillText(InvState.itemName,Math.floor(canvas.width/2-InvState.itemNameWidth/2),410);
@@ -782,7 +800,7 @@ class RestartState {
 
 class PreloaderState {
     static acceptCookies = new Button(canvas.width/2-210,canvas.height/2+36,192,72,"img/cookies.png",function(){
-        localStorage.setItem("cookiesAccepted","yes");
+        localStorage.setItem("lootcreate_CookiesAccepted","yes");
         Game.autosave = true;
         Game.state = LootState;
         LootState.init();
@@ -822,13 +840,10 @@ class Toggle extends Button {
         super(Toggle.x,y,128,64,`img/toggle-${initialValue}.png`,function() {
             this.value = !this.value;
             this.image.src = `img/toggle-${this.value}.png`;
-            console.log(`${this.id}, ${this.value},${this.path}`)
             onclick();
             Game.saveGame(false,false);
         },id,state);
-        console.log(this.path);
         this.value = initialValue;
-        console.log(`${id} Loaded in ${this.value}!`)
     }
 }
 
@@ -853,7 +868,7 @@ class SettingsState {
         SettingsState.toggles.cookies = new Toggle(canvas.height/2+this.toggleOffsets[2],"cookiesIG",[SettingsState],function() {
             SettingsState.cookies = !SettingsState.cookies;
             if (SettingsState.cookies) {
-                localStorage.setItem("cookiesAccepted","yes");
+                localStorage.setItem("lootcreate_CookiesAccepted","yes");
                 Game.autosave = true;
             } else {
                 localStorage.clear();
@@ -935,8 +950,8 @@ class AchievementState {
 }
 
 class Game {
-    static state = localStorage.getItem("cookiesAccepted")=="yes"?LootState:PreloaderState;
-    static autosave = localStorage.getItem("cookiesAccepted")=="yes";
+    static state = localStorage.getItem("lootcreate_CookiesAccepted")=="yes"?LootState:PreloaderState;
+    static autosave = localStorage.getItem("lootcreate_CookiesAccepted")=="yes";
     static cheats = {
         topTiers: false,
         everyRare: false
@@ -977,14 +992,7 @@ class Game {
             CheatingState.init();
         },6,"cheat",[LootState]),
         combineItems: new UIIcon(211,471,function() {
-            try {
-                CombineState.currentRecipe.combine();
-                SFX.play("combine");
-            } catch (e) {
-                if (e instanceof TypeError) {
-                    SFX.play("rejected");
-                }
-            }
+            CombineState.currentRecipe.combine();
         },7,"combineItems",[CombineState]),
         usableOnly: new UIIcon(281,471,function() {
             this.num=(this.num==8)?9:8; // switch texture
@@ -1019,7 +1027,7 @@ class Game {
         ctx.fillStyle = "black"
         if (Game.state != RestartState && Game.state != PreloaderState) {
             ctx.fillText(`Credits: ${Game.credits}`,5,24);
-            ctx.fillText("Lootcreate 1.4",5,48);
+            ctx.fillText("Lootcreate 1.4.01",5,48);
             if (LootState.cloverTurnsLeft>0) {
                 ctx.fillText(`${LootState.luck==777?"Godly":"Lucky"} Turns Left: ${LootState.cloverTurnsLeft}`,5,72);
             }
@@ -1066,8 +1074,6 @@ class Game {
             Game.cheats = loadData.cheats;
             SettingsState.sfx = loadData.settings.sfx;
             SettingsState.repeat = loadData.settings.repeat;
-            console.log(`Loaded ${loadData.settings.sfx} and ${loadData.settings.repeat}!`)
-            console.log(`Found ${SettingsState.sfx} and ${SettingsState.repeat}!`)
             Game.achievements = loadData.achievements;
         } catch (e) {
             if (e instanceof TypeError) {

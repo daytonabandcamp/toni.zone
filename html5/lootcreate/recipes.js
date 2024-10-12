@@ -246,14 +246,22 @@ class Recipe {
         return affordable;
     }
     combine() {
-        if (!this.canAfford) { return; }
+        if (!this.canAfford()) {
+            SFX.play("rejected");
+            return;
+        } else {
+            SFX.play("combine");
+        }
         this.elements.forEach((element)=>{
             var ingredientID = Game.inventory.findIndex((item)=>item.id==element.id);
             var ingredient = Game.inventory[ingredientID]
-            if (ingredient.count - element.count <= 0){
+            if (ingredient.count - element.count == 0){
                 Game.inventory.splice(ingredientID,1);
-            } else {
+            } else if (ingredient.count - element.count > 0) {
                 Game.inventory[ingredientID].count -= element.count;
+            } else {
+                console.log(Game.inventory[ingredientID].count, ingredient.count - element.count, ingredient)
+                throw(console.error("mayday mayhem"));
             }
         });
         var id = Game.inventory.findIndex((item)=>item.id==this.output.id);
