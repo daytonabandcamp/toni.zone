@@ -259,9 +259,6 @@ class Recipe {
                 Game.inventory.splice(ingredientID,1);
             } else if (ingredient.count - element.count > 0) {
                 Game.inventory[ingredientID].count -= element.count;
-            } else {
-                console.log(Game.inventory[ingredientID].count, ingredient.count - element.count, ingredient)
-                throw(console.error("mayday mayhem"));
             }
         });
         var id = Game.inventory.findIndex((item)=>item.id==this.output.id);
