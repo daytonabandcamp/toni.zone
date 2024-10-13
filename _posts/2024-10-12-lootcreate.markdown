@@ -16,6 +16,9 @@ this game uses **cookies** to save game progress when indicated. cookies are onl
 use your **mouse** to click on the big crate and other icons to procure, sell, keep and combine loot! press **Z** to sell loot right from out of the big crate or from your inventory, and press **X** to keep loot in your inventory!
 
 ## changelog
+- 1.4.03: have your cake (october 12, 2024)
+    - you don't have to get the cake slice from the drop pool to get the achievement anymore
+    - gave anna some credit for her help playtesting
 - 1.4.02: the penny patch (october 12, 2024)
     - added the penny achievement (sorry)
 - 1.4.01: the ghastly ghostly patch (october 12, 2024)

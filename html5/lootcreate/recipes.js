@@ -299,6 +299,8 @@ class Recipe {
             LootState.handleAchievements("The Red Pill");
         } else if (this.output.id==63) {
             LootState.handleAchievements("Make Me!")
+        } else if (this.output.id==44) {
+            LootState.handleAchievements("How You Slice It");
         } else if (this.elements[0].id==13){
             LootState.handleAchievements("But Of Quartz!");
         } else if (this.elements[0].id==7 && this.elements[0].count==100) {

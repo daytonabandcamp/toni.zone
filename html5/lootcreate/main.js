@@ -552,6 +552,9 @@ class CombineState {
         CombineState.textWidths.desc = ctx.measureText(CombineState.descText).width;
         InvState.prev.selectable = CombineState.selectedRecipe > 0;
         InvState.next.selectable = !(CombineState.selectedRecipe + 1 >= (CombineState.showUsableOnly?CombineState.usableList:Recipe.list).length);
+        if (Game.inventory.length == 64) {
+            LootState.handleAchievements("I've Wasted My Life");
+        }
     }
     static update() {
         ctx.fillStyle = "black";
@@ -1029,7 +1032,11 @@ class Game {
         ctx.fillStyle = "black"
         if (Game.state != RestartState && Game.state != PreloaderState) {
             ctx.fillText(`Credits: ${Game.credits}`,5,24);
-            ctx.fillText("Lootcreate 1.4.02",5,48);
+            ctx.fillText("Lootcreate 1.4.03",5,48);
+            ctx.textAlign = "right";
+            ctx.fillText("toni.zone gamez",canvas.width-5,24);
+            ctx.fillText("beta tested by anna",canvas.width-5,48);
+            ctx.textAlign = "left";
             if (LootState.cloverTurnsLeft>0) {
                 ctx.fillText(`${LootState.luck==777?"Godly":"Lucky"} Turns Left: ${LootState.cloverTurnsLeft}`,5,72);
             }
