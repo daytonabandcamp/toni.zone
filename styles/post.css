@@ -82,3 +82,25 @@ p {
         flex-direction: column;
     }
 }
+
+/* figures. wanting to start using these instead of markdown images! i've always wanted captioned images in my writing... */
+figure {
+    margin: 12px 0 0 0;
+    border: 1px solid #444;
+    background-color: black;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    align-items: center;
+    justify-content: center;
+}
+figcaption {
+    font-size: small;
+    color: darkgray;
+    margin-top: 8px;
+}
+figure img {
+    margin-top: 0 !important;
+    width: fit-content;
+}

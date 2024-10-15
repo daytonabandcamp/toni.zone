@@ -65,7 +65,7 @@ class Items {
         new Item(4,"Clover","Some people say I look like me dad. (YOUR LUCK HAS IMPROVED!)",37,100),
         new Item(4,"Cool Comic","Probably about Lion-Man or Super-Dog or something. Quite valuable!",38,100),
         new Item(5,"Video Game Toy","If his name were \"Bo,\" he'd say \"It's a-me, Bo!\"",39,100),
-        new Item(5,"Retro Handheld","It's so lovable, even if the battery is corroded and unusubale!",40,250),
+        new Item(5,"Retro Handheld","It's so lovable, even if the battery is corroded and unusable!",40,250),
         new Item(5,"Fictional Squid Figurine","Vee-my!",41,140),
         new Item(5,"Berry Pie","The whole enchilada! ...That expression might not be very fitting.",42,160),
         new Item(5,"Antivirus Software","Protects against adware, most of which is just built-in nowadays!",43,250),

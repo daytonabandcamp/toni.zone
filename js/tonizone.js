@@ -1,4 +1,4 @@
-let splashes=['Trans rights!','Professionals have standards.','Trans rights are human rights!','Modern websites don\'t have to suck!','Too bi for the naked eye!','Twitter is unnecessary!','Time is a construct!',"I should've stayed in the boat!",'My child is fine!',"What's the significance of Mr. Bean?","sus","Why would I make a carrd now?","Spunch bop took 40 benadryls!","All hail the dark lord of the twin moons!","You chose money, not my love!","Stay hydrated!","Eat healthy and often!","Get 8 hours of sleep!","Take care of yourself!","I wanna merge without looking!","Give us the cum!","Free Palestine!","Black lives matter!","Indev!","sqrt(-1) love you!","YouTube, do better!","Testificates!","Witty comment!","Check back on Christmas!","Check back on Halloween!","I did a really, really, really good job formatting this speech bubble, didn't I?","See you around, Tony Hawk Underground!","Clean your room!","No strong feelings on taxes!","There's no Cars 2!","I'll be in a guy-mono!","Stupid Nintendo games!","FlingSmash!","It's a fuckin' sponge!","No matter how good I am at design, I'll never be proud!","Billie Joe Armstrong!","Moe is here. Here is Moe.","THIS IS AWESOME ALEXA PLAY TARZAN BOY BY BALTIMORA","BOW-WOW-YO-YIPPEE-YO, HERE WE GO!!!","I need to look in the guidebook for a hotel!","Get your product phat!","by october 2023!","anger! mayhem! chaos! piss!","it go!","and the tijuana brass!","the benefit of the doubt!","whatever happened to my transylvania twist?","what da dog doin?","i don't hate taylor swift!","i want to know if i can live with what i know, and only that!","straight from the oven!","d'ya want a choccy biccy, luuuuv?","this shit ain't nothin' to me, man!",`<span style="font-size: 28px;">go big or go home!</span>`,"not cringe or ohio at all!","where the skies are not cloudy all day!","i guess we doin toni.zone now!","not s&p approved!","let me get my shoes!","stand with animation!","full of country goodness and green pea-ness!","exit stage left!","it's never lupus!","they're trying to build a prison!","gouging expletives into vehicles with an unlocking tool!","a series of tubes!","spring break cancun!","i write splashes so you don't have to!","you should own toys! they're fun!","the eight winds cannot move me!","i failed the maths test! i got an f!","everybody do the wenis! the wenis is a dance!","ceci n'est pas une site internet!","monkeys spinning monkeys!","obamna!","all that glitters is not gold!","cool laser meeces!","i'm here to make 15 cents come true!","squeeze me! i squeak! (turn your phone to landscape!)","best viewed on desktop!","mason jars of sweetness!","it's not a &nbsp;<span style=\"font-size: 20px\">too</span>mah!","you want a blade? i'll show you a blade!","they shall sample my blade!",'&lt;div id="splash" class="splash"&gt;&lt;/div&gt;!','<span style="font-size: 28px">☭!</span>',"take it back now, y'all!",'mc-199804?',"i respectfully disagree with people who don't want to vote!","more than -1 sold!","such a valiant desire!","where having smarts is more important than being pretty!","6.3% lua!","the best thing since status.cafe!","i was jekyll jekyll hyde jekyll hyde hyde jekyll!","smarter than the average bear!","it's cold and it's fresh and it's all homemade!","we'll have halloween on christmas!"]
+let splashes=['Trans rights!','Professionals have standards.','Trans rights are human rights!','Modern websites don\'t have to suck!','Too bi for the naked eye!','Twitter is unnecessary!','Time is a construct!',"I should've stayed in the boat!",'My child is fine!',"What's the significance of Mr. Bean?","sus","Why would I make a carrd now?","Spunch bop took 40 benadryls!","All hail the dark lord of the twin moons!","You chose money, not my love!","Stay hydrated!","Eat healthy and often!","Get 8 hours of sleep!","Take care of yourself!","I wanna merge without looking!","Give us the cum!","Free Palestine!","Black lives matter!","Indev!","sqrt(-1) love you!","YouTube, do better!","Testificates!","Witty comment!","Check back on Christmas!","Check back on Halloween!","I did a really, really, really good job formatting this speech bubble, didn't I?","See you around, Tony Hawk Underground!","Clean your room!","No strong feelings on taxes!","There's no Cars 2!","I'll be in a guy-mono!","Stupid Nintendo games!","FlingSmash!","It's a fuckin' sponge!","No matter how good I am at design, I'll never be proud!","Billie Joe Armstrong!","Moe is here. Here is Moe.","THIS IS AWESOME ALEXA PLAY TARZAN BOY BY BALTIMORA","BOW-WOW-YO-YIPPEE-YO, HERE WE GO!!!","I need to look in the guidebook for a hotel!","Get your product phat!","by october 2023!","anger! mayhem! chaos! piss!","it go!","and the tijuana brass!","the benefit of the doubt!","whatever happened to my transylvania twist?","what da dog doin?","i don't hate taylor swift!","i want to know if i can live with what i know, and only that!","straight from the oven!","d'ya want a choccy biccy, luuuuv?","this shit ain't nothin' to me, man!",`<span style="font-size: 28px;">go big or go home!</span>`,"not cringe or ohio at all!","where the skies are not cloudy all day!","i guess we doin toni.zone now!","not s&p approved!","let me get my shoes!","stand with animation!","full of country goodness and green pea-ness!","exit stage left!","it's never lupus!","they're trying to build a prison!","gouging expletives into vehicles with an unlocking tool!","a series of tubes!","spring break cancun!","i write splashes so you don't have to!","you should own toys! they're fun!","the eight winds cannot move me!","i failed the maths test! i got an f!","everybody do the wenis! the wenis is a dance!","ceci n'est pas une site internet!","monkeys spinning monkeys!","obamna!","all that glitters is not gold!","cool laser meeces!","i'm here to make 15 cents come true!","squeeze me! i squeak! (turn your phone to landscape!)","best viewed on desktop!","mason jars of sweetness!","it's not a &nbsp;<span style=\"font-size: 20px\">too</span>mah!","you want a blade? i'll show you a blade!","they shall sample my blade!",'&lt;div id="splash" class="splash"&gt;&lt;/div&gt;!','<span style="font-size: 28px">☭!</span>',"take it back now, y'all!",'mc-199804?',"i respectfully disagree with people who don't want to vote!","more than -1 sold!","such a valiant desire!","where having smarts is more important than being pretty!","6.3% lua!","the best thing since status.cafe!","i was jekyll jekyll hyde jekyll hyde hyde jekyll!","smarter than the average bear!","it's cold and it's fresh and it's all homemade!","we'll have halloween on christmas!","so many combinations! (so many!)","tiny tiny people swinging tiny tiny lanterns!","it makes people disappear!","needlessly complicated!"]
 
 splash.innerHTML = splashes[Math.floor(Math.random()*splashes.length)];
 let now = new Date(Date.now());
@@ -108,25 +108,12 @@ squeaky.addEventListener("keydown", function(e) {
     }
 });
 
-ui01.addEventListener("mouseover", (e) => {
-    uiSounds[0].currentTime = 0;
-    uiSounds[0].play();
-})
-
-ui02.addEventListener("mouseover", (e) => {
-    uiSounds[1].currentTime = 0;
-    uiSounds[1].play();
-})
-
-ui03.addEventListener("mouseover", (e) => {
-    uiSounds[2].currentTime = 0;
-    uiSounds[2].play();
-})
-
-ui04.addEventListener("mouseover", (e) => {
-    uiSounds[3].currentTime = 0;
-    uiSounds[3].play();
-})
+for (let i = 1; i <= 4; i++) {
+    document.getElementById(`ui0${i}`).addEventListener("mouseover",(e)=>{
+        uiSounds[i-1].currentTime = 0;
+        uiSounds[i-1].play();
+    })
+}
 
 function getCurrentTime(now) {
     return `${now.getHours()%12==0?12:now.getHours()%12}:${now.getMinutes().toString().padStart(2,"0")}${now.getHours()>11?"pm":"am"} &nbsp;&nbsp;•&nbsp;&nbsp; ${days[now.getDay()]}, ${months[now.getMonth()]}. ${now.getDate()}`
@@ -159,3 +146,5 @@ mobileSearch.addEventListener("keydown", (event) => {
         window.location.href=`/search.html?q=${document.getElementById('mobile_search').value}`;
     }
 })
+
+//TODO: should probably turn all this object-oriented sometime so as not to clutter the global namespace
