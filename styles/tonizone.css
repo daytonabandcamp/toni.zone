@@ -1,4 +1,6 @@
 html {
+    --link-color: #74BD42;
+    --glow-color: #00ff0069;
     background-color: black;
     color: white;
     font-family: "Ubuntu", sans-serif;
@@ -158,7 +160,7 @@ animation-delay:4s;
 .logo-img {
     position: absolute;
     top: -40px;
-    filter: drop-shadow(0px -2px 2px #00ff0069);
+    filter: drop-shadow(0px -2px 2px var(--glow-color));
 }
 .logo-logo {
     position: absolute;
@@ -285,7 +287,7 @@ small {
     text-decoration: underline;
     cursor: pointer;
     transition: 0.25s ease-out;
-    color: #74BD42;
+    color: var(--link-color);
 }
 #buttons-show:hover {
     font-weight: 700;
@@ -377,7 +379,7 @@ a:hover {
 a {
     transform: scale(100%);
     transition: 0.25s ease-out;
-    color: #74BD42;
+    color: var(--link-color);
 }
 .mobile-license {
     display: none;
