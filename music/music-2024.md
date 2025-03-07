@@ -25,7 +25,7 @@ title: 2024 music
     {% endfor %}
     <div class="page-selector">
         <a href="/music/2023">&lt; 2023</a>
-        <a class="disabled">2025 &gt;</a>
+        <a class="/music/2025">">2025 &gt;</a>
     </div>
     <script src="category.js"></script>
 </div>

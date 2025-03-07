@@ -22,7 +22,7 @@ title: 2024 posts
     {% endfor %}
     <div class="page-selector">
         <a href="/posts/2023">&lt; 2023</a>
-        <a class="disabled">2025 &gt;</a>
+        <a href="/posts/2025">2025 &gt;</a>
     </div>
     <script src="category.js"></script>
 </div>
