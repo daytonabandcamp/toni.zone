@@ -7,7 +7,7 @@ categories: music
 thumb: hypercard
 description: "daytona is in the process of completing a new album, her third one, which will probably drop on bandcamp in april or may, but you don't have to wait until then to experience sixteen of its new songs!"
 ---
-*daytona* is in the process of completing a new album, her third one, which will probably drop on bandcamp in april or may, but you don't have to wait until then to experience sixteen of its new songs (interpretive snippets in extremely crappy lo-fidelity) presented here for your listening enjoyment! just point and click on a song title and hear a tinny approximation of her signature catchy melodies and glass-shattering electronica music!<br>
+*daytona* is in the process of completing a new album, her third one, which will probably drop on bandcamp in april or may, but you don't have to wait until then to experience sixteen of its new songs (interpretive snippets in extremely crappy lo-fidelity) presented here for your listening enjoyment! just point and click on a song title and hear a tinny approximation of her signature catchy melodies and glass-shattering electronica music!<br><br>
 <a href="#" onclick="(new Audio('/sfx/hypercard/moontouch.mp3')).play();">♫ moontouch ♫</a><br>
 <a href="#" onclick="(new Audio('/sfx/hypercard/find.mp3')).play();">♫ find ♫</a><br>
 <a href="#" onclick="(new Audio('/sfx/hypercard/grave.mp3')).play();">♫ grave ♫</a><br>
