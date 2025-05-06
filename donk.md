@@ -1,3 +1,8 @@
+---
+permalink: /donk
+layout: none
+title: donk
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
