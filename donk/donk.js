@@ -233,12 +233,11 @@ function updateSongs() {
         }
         localStorage.setItem('deletedSongs',JSON.stringify(deleted));
         // delete the songs in the deleted array from the songs array
-        songs = songs.filter(a => a != deleted.includes(a));
+        songs = songs.filter(a => !deleted.includes(a));
 }
 
 function icon() {
-
-        songs = songs.filter(a => a != deleted.includes(a));
+        songs = songs.filter(a => !deleted.includes(a));
         updateSongs();
         new Audio("donk/dis-one.wav").play();
         setTimeout(delay,1220);
