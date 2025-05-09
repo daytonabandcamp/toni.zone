@@ -227,10 +227,13 @@ songs = ["justin bieber - yummy",
 let choice;
 let deleted = [];
 
-function updateSongs() {
+function loadSongs() {
         if (localStorage.getItem('deletedSongs') != null) {
                 deleted = JSON.parse(localStorage.getItem('deletedSongs'));
         }
+}
+
+function updateSongs() {
         localStorage.setItem('deletedSongs',JSON.stringify(deleted));
         // delete the songs in the deleted array from the songs array
         songs = songs.filter(a => !deleted.includes(a));

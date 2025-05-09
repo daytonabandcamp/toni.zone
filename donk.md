@@ -10,7 +10,7 @@ title: donk
         <link rel="stylesheet" type="text/css" href="donk/main.css">
         <title>donk</title>
 </head>
-<body>
+<body onload="loadSongs()">
         <div class="center-screen">
                 <h1 id="song">donk</h1>
                 <button id="choose" onclick="icon()">choose</button>
