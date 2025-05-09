@@ -226,28 +226,31 @@ songs = ["justin bieber - yummy",
 
 let choice;
 let deleted = [];
+let songsUpdated = false;
 
+function updateSongs() {
+        if (!songsUpdated) { return; }
+        if (localStorage.getItem('deletedSongs') != null) {
+                deleted = JSON.parse(localStorage.getItem('deletedSongs'));
+        }
+        localStorage.setItem('deletedSongs',JSON.stringify(deleted));
+        // delete the songs in the deleted array from the songs array
+        songs = songs.filter(a => a != deleted.includes(a));
+}
 
 function icon() {
+
+        songs = songs.filter(a => a != deleted.includes(a));
+        updateSongs();
         new Audio("donk/dis-one.wav").play();
         setTimeout(delay,1220);
 }
 
 function delay() {
-
         // pick a song and set html to it
         choice = songs[Math.floor(Math.random()*songs.length)];
         document.getElementById("song").innerHTML = choice;
         console.log(`length is ${songs.length}`);
-
-        // update deletedSongs or create it if it doesn't exist
-        if (localStorage.getItem('deletedSongs') != null) {
-                deleted = JSON.parse(localStorage.getItem('deletedSongs'));
-        }
-        deleted.push(choice);
-        localStorage.setItem('deletedSongs',JSON.stringify(deleted));
-
-        // delete all songs in deletedSongs
-        songs = songs.filter(a => a != deleted.includes(a));
+        updateSongs();
 }
 
