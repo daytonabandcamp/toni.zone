@@ -227,31 +227,30 @@ songs = ["justin bieber - yummy",
 let choice;
 let deleted = [];
 
+// on load: load localstorage into deleted array
+// on load: filter songs array using !deleted.includes
 function loadSongs() {
-        if (localStorage.getItem('deletedSongs') != null) {
-                deleted = JSON.parse(localStorage.getItem('deletedSongs'));
-        }
-}
-
-function updateSongs() {
-        localStorage.setItem('deletedSongs',JSON.stringify(deleted));
-        // delete the songs in the deleted array from the songs array
+        deleted = JSON.parse(localStorage.getItem('deletedSongs'));
         songs = songs.filter(a => !deleted.includes(a));
 }
 
+// on click: visual stuff. plays audio & delays the choice-making function
 function icon() {
-        songs = songs.filter(a => !deleted.includes(a));
-        updateSongs();
         new Audio("donk/dis-one.wav").play();
         setTimeout(delay,1220);
 }
 
 function delay() {
-        // pick a song and set html to it
+        // pick a song and set html to it. then update deleted array with the song
         choice = songs[Math.floor(Math.random()*songs.length)];
         document.getElementById("song").innerHTML = choice;
         deleted.push(choice);
+
+        // on choice: save deleted array to localstorage
+        localStorage.setItem('deletedSongs',JSON.stringify(deleted));
+
+        // on choice: filter songs array using !deleted.includes
+        songs = songs.filter(a => !deleted.includes(a));
         console.log(`length is ${songs.length}`);
-        updateSongs();
 }
 
