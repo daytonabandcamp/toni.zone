@@ -247,6 +247,7 @@ function delay() {
         // pick a song and set html to it
         choice = songs[Math.floor(Math.random()*songs.length)];
         document.getElementById("song").innerHTML = choice;
+        deleted.push(choice);
         console.log(`length is ${songs.length}`);
         updateSongs();
 }
