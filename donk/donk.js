@@ -226,10 +226,8 @@ songs = ["justin bieber - yummy",
 
 let choice;
 let deleted = [];
-let songsUpdated = false;
 
 function updateSongs() {
-        if (!songsUpdated) { return; }
         if (localStorage.getItem('deletedSongs') != null) {
                 deleted = JSON.parse(localStorage.getItem('deletedSongs'));
         }
