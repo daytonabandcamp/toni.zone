@@ -227,15 +227,13 @@ songs = ["justin bieber - yummy",
 let choice;
 let deleted = [];
 
-function init() {
-        deleted = JSON.parse(localStorage.getItem('deletedSongs'));
-        songs = songs.filter(a => !deleted.includes(a));
-}
-
 // on load: load localstorage into deleted array
 // on load: filter songs array using !deleted.includes
-function loadSongs() {
-
+function init() {
+        if (localStorage.getItem('deletedSongs') != null) {
+                deleted = JSON.parse(localStorage.getItem('deletedSongs'));
+                songs = songs.filter(a => !deleted.includes(a));
+        }
 }
 
 // on click: visual stuff. plays audio & delays the choice-making function
