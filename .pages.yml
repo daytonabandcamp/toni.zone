@@ -1,1 +1,10 @@
 media: cms
+content:
+  - name: posts
+    label: Posts
+    path: src/posts
+    filename: "{primary}.md"
+    type: collection
+    fields:
+    - {name: title, label: Title, type: string, required: true}
+    - {name: body, label: Body, type: rich-text}
