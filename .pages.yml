@@ -2,7 +2,7 @@ media: cms
 content:
   - name: posts
     label: Posts
-    path: src/posts
+    path: src/_posts
     filename: "{primary}.md"
     type: collection
     fields:
