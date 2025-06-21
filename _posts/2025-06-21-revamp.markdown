@@ -1,0 +1,34 @@
+---
+layout: post
+title: "revamp"
+date: 2025-06-21 00:00:00 -0700
+permalink: /post/2025/revamp
+categories: post
+thumb: revamp
+description: "i have a pretty good framework going, but i wanna make things look a little less pretentious and msn-ish. i don't like doing thumbnails. i know pictures are fun and all, but... it makes getting content out much harder."
+---
+i wanna revamp toni.zone again! a philosophy i've been leaning into lately is to create and keep creating, no matter how shoddy the output is. if i have issues with perfectionism anyway, i might as well value quantity over quality... well, maybe not quality. quantity over length.
+
+a few days ago, i went on a trip to chicago and wrote down a bunch of stuff while on the plane and scouring the city with my close friends and the loves of my life. what can i say? it feels satisfying to just... write without having to think about it too much.
+
+believe it or not, the less i give a fuck about what other people think, the more fun i have! and as i walk further and further into the meat of my life, i'm realizing that i should be prioritizing fun over all else whenever i'm not behind a grill or a gas station counter. after all, i can only see the number of moments in my life where that is the case going *down* from here on out.
+
+i have a pretty good framework going, but i wanna make things look a little less pretentious and msn-ish. i don't like doing thumbnails. i know pictures are fun and all, but... it makes getting content out much harder. i'm depressed, so... i don't like doing hard things. thus... not much content! it's a pretty simple cause and effect.
+
+i like writing the damn things, i just don't like the whole decorum around it. the mistake i made when revamping the website last october was putting *more of a focus* on that decorum. that sucks. i hate that. it makes me want to die.
+
+more than anything, i want my website to be a folder that i can put things into that i want the world to see! and right now, it's a gigantic network of folders that i have to scientifically and methodically squeeze each little file into the exact correct folders necessary to make everything work. i understand i could just get a social media, but that's the thing... i don't exactly want to be social!
+
+the obvious answer here would be to use wordpress, which is something i have thought in some detail about. aaaand i don't really want to. as much as i want to focus on pushing content out more than anything--i mean, why would i have a website if i don't do that--switching everything over to wordpress kind of flies in the face of everything i stand for.
+
+i went in detail in [first things first](https://toni.zone/post/2022/first-things-first) about how i don't want my website to be a big ol' jpeg taking up the whole screen. wordpress is kind of just... that. also, i kinda don't like matt mullenweg. really, if you wanna tangle with burgerfootjob or catgirlcumsock, you'll have to get through me first.
+
+the ultimate goal is this: i want to be able to write something down or draw a picture, put it into a folder somewhere, and watch it pop up on my website! ideally, immediately! things standing in the way of that include *github* and *thumbnails.*
+
+currently, if i want to publish something, i have to spend a few minutes making a thumbnail, make sure the file name and folder are correct, add frontmatter to the markdown file in vscode, and stage and commit the changes to the github repository. and i hate that so goddamn much.
+
+will this mean upending the entire website and... *gasp...* ***adding a proper backend?*** yeah, probably. hopefully it only takes a couple hours and all the existing content ports just fine! i have no problem with the way the site looks, i have a problem with content management and the way things are structured. but... if i have to wait on things looking perfect, i will.
+
+see you then!
+
+(thumbnail image by [olekinderhook](https://web.archive.org/web/20161024185444/http://www.panoramio.com/user/4377971?with_photo_id=73229517) on wikimedia commons)
